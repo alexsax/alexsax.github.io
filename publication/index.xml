@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications on Sasha Sax</title>
+    <link>https://alexsax.github.io/publication/</link>
+    <description>Recent content in Publications on Sasha Sax</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Sasha Sax</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://alexsax.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Taskonomy: Disentangling Task Transfer Learning</title>
+      <link>https://alexsax.github.io/publication/taskonomy/</link>
+      <pubDate>Tue, 20 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexsax.github.io/publication/taskonomy/</guid>
+      <description>See the main website for live demos of the API and task-specific networks, as well as pretrained models, samples from the transfer networks, and also explanations of the methodology.</description>
+    </item>
+    
+    <item>
+      <title>Embodied Real-World Active Perception</title>
+      <link>https://alexsax.github.io/publication/gibson/</link>
+      <pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexsax.github.io/publication/gibson/</guid>
+      <description>See the main website for live demos of the API and task-specific networks, as well as pretrained models, samples from the transfer networks, and also explanations of the methodology.</description>
+    </item>
+    
+    <item>
+      <title>Joint 2D-3D-Semantic Data for Indoor Scene Understanding</title>
+      <link>https://alexsax.github.io/publication/2d3ds/</link>
+      <pubDate>Thu, 06 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexsax.github.io/publication/2d3ds/</guid>
+      <description>The dataset is available using the links above. The code link above provides some utilities for interacting with the dataset in both Python and C++.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1 on Sasha Sax</title>
+    <link>https://alexsax.github.io/publication_types/1/</link>
+    <description>Recent content in 1 on Sasha Sax</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Sasha Sax</copyright>
+    <lastBuildDate>Tue, 20 Feb 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://alexsax.github.io/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Taskonomy: Disentangling Task Transfer Learning</title>
+      <link>https://alexsax.github.io/publication/taskonomy/</link>
+      <pubDate>Tue, 20 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexsax.github.io/publication/taskonomy/</guid>
+      <description>See the main website for live demos of the API and task-specific networks, as well as pretrained models, samples from the transfer networks, and also explanations of the methodology.</description>
+    </item>
+    
+    <item>
+      <title>Embodied Real-World Active Perception</title>
+      <link>https://alexsax.github.io/publication/gibson/</link>
+      <pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexsax.github.io/publication/gibson/</guid>
+      <description>See the main website for live demos of the API and task-specific networks, as well as pretrained models, samples from the transfer networks, and also explanations of the methodology.</description>
+    </item>
+    
+  </channel>
+</rss>
