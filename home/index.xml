@@ -18,8 +18,8 @@
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>https://alexsax.github.io/home/about/</guid>
-      <description>Biography I am starting my Ph.D. at UC Berkeley&amp;rsquo;s EECS program in September. I just finished up my Master&amp;rsquo;s at Stanford, and my advisor was Silvio Savarese.
-My research interests are in building general and flexible autonomous systems. These systems should be able to learn new things with minimal amounts of extra data (for example, by leveraging prior world knowledge). They should also be able to learn continuously over their entire lifetime.</description>
+      <description>Biography I am a Ph.D. student in UC Berkeley&amp;rsquo;s EECS program and my advisor is Jitenra Malik. Before this, I was at Stanford where I completed my B.Sc. in Math and M.Sc. in Computer Science, advised by Silvio Savarese.
+My research interests are in building general and flexible autonomous systems. These systems should be able to learn new things with minimal amounts of extra data (for example, by leveraging prior world knowledge).</description>
     </item>
     
     <item>
@@ -28,7 +28,7 @@ My research interests are in building general and flexible autonomous systems. T
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>https://alexsax.github.io/home/awards/</guid>
-      <description> CVPR 2018 Best Paper Award for Taskonomy NVIDIA Pioneering Research Award for Gibson Environment Stanford University Distinction in Research for thesis Computational Evidence for Structure in the Space of Tasks  </description>
+      <description> CVPR 2018 Best Paper Award for Taskonomy NVIDIA Pioneering Research Award for Gibson Environment Stanford University Distinction in Research for Computational Evidence for Structure in the Space of Tasks  </description>
     </item>
     
     <item>
@@ -43,7 +43,7 @@ My research interests are in building general and flexible autonomous systems. T
     <item>
       <title>Selected Publications</title>
       <link>https://alexsax.github.io/home/publications_selected/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0600</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0700</pubDate>
       
       <guid>https://alexsax.github.io/home/publications_selected/</guid>
       <description></description>
@@ -52,7 +52,7 @@ My research interests are in building general and flexible autonomous systems. T
     <item>
       <title>Recent Publications</title>
       <link>https://alexsax.github.io/home/publications/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0600</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0700</pubDate>
       
       <guid>https://alexsax.github.io/home/publications/</guid>
       <description></description>

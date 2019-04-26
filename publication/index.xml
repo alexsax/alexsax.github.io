@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>Mid-Level Visual Representations Improve Generalization and Sample Efficiency for Learning Visuomotor Policies</title>
+      <link>https://alexsax.github.io/publication/midlevel/</link>
+      <pubDate>Mon, 31 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexsax.github.io/publication/midlevel/</guid>
+      <description>See the main website for demos of each policy, including vidos of random rollouts and average reward curves in train and test environments. More results are available, as well as code and an overview video.</description>
+    </item>
+    
+    <item>
       <title>Taskonomy: Disentangling Task Transfer Learning</title>
       <link>https://alexsax.github.io/publication/taskonomy/</link>
       <pubDate>Tue, 20 Feb 2018 00:00:00 +0000</pubDate>
@@ -27,7 +36,7 @@
       <pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://alexsax.github.io/publication/gibson/</guid>
-      <description>See the main website for live demos of the API and task-specific networks, as well as pretrained models, samples from the transfer networks, and also explanations of the methodology.</description>
+      <description>See the main website for interactive tools to explore the dataset as well as an explanation of the methodology.</description>
     </item>
     
     <item>
