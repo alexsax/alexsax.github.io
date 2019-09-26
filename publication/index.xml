@@ -13,11 +13,20 @@
     
     
     <item>
-      <title>Mid-Level Visual Representations Improve Generalization and Sample Efficiency for Learning Visuomotor Policies</title>
-      <link>https://alexsax.github.io/publication/midlevel/</link>
-      <pubDate>Mon, 31 Dec 2018 00:00:00 +0000</pubDate>
+      <title>Learning to Navigate Using Mid-Level Visual Priors</title>
+      <link>https://alexsax.github.io/publication/midlevelcorl/</link>
+      <pubDate>Tue, 24 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://alexsax.github.io/publication/midlevel/</guid>
+      <guid>https://alexsax.github.io/publication/midlevelcorl/</guid>
+      <description>See the main website for demos of each policy, including vidos of random rollouts and average reward curves in train and test environments. More results are available, as well as code and an overview video.</description>
+    </item>
+    
+    <item>
+      <title>Mid-Level Visual Representations Improve Generalization and Sample Efficiency for Learning Visuomotor Policies</title>
+      <link>https://alexsax.github.io/publication/midlevelbaylearn/</link>
+      <pubDate>Fri, 20 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexsax.github.io/publication/midlevelbaylearn/</guid>
       <description>See the main website for demos of each policy, including vidos of random rollouts and average reward curves in train and test environments. More results are available, as well as code and an overview video.</description>
     </item>
     

@@ -17,10 +17,10 @@
       
     
   
-  <meta name="description" content="Perception and being active (i.e. having a certain level of motion freedom) are closely tied. Learning active perception and sensorimotor control in the physical world is cumbersome as existing algorithms are too slow to efficiently learn in real-time and robots are fragile and costly. This has given rise to learning in simulation which consequently casts a question on transferring to real-world. In this paper, we study learning **perception** for **active agents** in **real-world**, propose a virtual environment for this purpose, and demonstrate complex learned locomotion abilities. The primary characteristics of the learning environments, which transfer into the trained agents, are I) being from the real-world and reflecting its semantic complexity, II) having a mechanism to ensure no need to further domain adaptation prior to deployment of results in real-world, III) embodiment of the agent and making it subject to constraints of space and physics.">
+  <meta name="description" content="How much does having **visual priors about the world** (e.g. the fact that the world is 3D) assist in learning to perform **downstream motor tasks** (e.g. delivering a package)? We study this question by integrating a generic perceptual skill set (e.g. a distance estimator, an edge detector, etc.) within a reinforcement learning framework--see Figure 1. This skill set (hereafter **mid-level perception**) provides the policy with a more processed state of the world compared to raw images. &lt;/br&gt; We find that using a mid-level perception confers significant advantages over training end-to-end from scratch (i.e. not leveraging priors) in navigation-oriented tasks. Agents are able to generalize to situations where the from-scratch approach fails and training becomes significantly more sample efficient. However, we show that realizing these gains requires careful selection of the mid-level perceptual skills. Therefore, we refine our findings into an efficient max-coverage feature set that can be adopted in lieu of raw images. We perform our study in completely separate buildings for training and testing and compare against visually blind baseline policies and state-of-the-art feature learning methods.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://alexsax.github.io/publication/gibson/">
+  <link rel="alternate" hreflang="en-us" href="https://alexsax.github.io/publication/midlevelbaylearn/">
 
   
 
@@ -82,25 +82,25 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://alexsax.github.io/publication/gibson/">
+  <link rel="canonical" href="https://alexsax.github.io/publication/midlevelbaylearn/">
 
   <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="Sasha Sax">
-  <meta property="og:url" content="https://alexsax.github.io/publication/gibson/">
-  <meta property="og:title" content="Embodied Real-World Active Perception | Sasha Sax">
-  <meta property="og:description" content="Perception and being active (i.e. having a certain level of motion freedom) are closely tied. Learning active perception and sensorimotor control in the physical world is cumbersome as existing algorithms are too slow to efficiently learn in real-time and robots are fragile and costly. This has given rise to learning in simulation which consequently casts a question on transferring to real-world. In this paper, we study learning **perception** for **active agents** in **real-world**, propose a virtual environment for this purpose, and demonstrate complex learned locomotion abilities. The primary characteristics of the learning environments, which transfer into the trained agents, are I) being from the real-world and reflecting its semantic complexity, II) having a mechanism to ensure no need to further domain adaptation prior to deployment of results in real-world, III) embodiment of the agent and making it subject to constraints of space and physics.">
+  <meta property="og:url" content="https://alexsax.github.io/publication/midlevelbaylearn/">
+  <meta property="og:title" content="Mid-Level Visual Representations Improve Generalization and Sample Efficiency for Learning Visuomotor Policies | Sasha Sax">
+  <meta property="og:description" content="How much does having **visual priors about the world** (e.g. the fact that the world is 3D) assist in learning to perform **downstream motor tasks** (e.g. delivering a package)? We study this question by integrating a generic perceptual skill set (e.g. a distance estimator, an edge detector, etc.) within a reinforcement learning framework--see Figure 1. This skill set (hereafter **mid-level perception**) provides the policy with a more processed state of the world compared to raw images. &lt;/br&gt; We find that using a mid-level perception confers significant advantages over training end-to-end from scratch (i.e. not leveraging priors) in navigation-oriented tasks. Agents are able to generalize to situations where the from-scratch approach fails and training becomes significantly more sample efficient. However, we show that realizing these gains requires careful selection of the mid-level perceptual skills. Therefore, we refine our findings into an efficient max-coverage feature set that can be adopted in lieu of raw images. We perform our study in completely separate buildings for training and testing and compare against visually blind baseline policies and state-of-the-art feature learning methods.">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2018-02-19T00:00:00&#43;00:00">
+  <meta property="article:published_time" content="2019-09-20T00:00:00&#43;00:00">
   
-  <meta property="article:modified_time" content="2018-02-19T00:00:00&#43;00:00">
-  
-
-  
+  <meta property="article:modified_time" content="2019-09-20T00:00:00&#43;00:00">
   
 
-  <title>Embodied Real-World Active Perception | Sasha Sax</title>
+  
+  
+
+  <title>Mid-Level Visual Representations Improve Generalization and Sample Efficiency for Learning Visuomotor Policies | Sasha Sax</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
@@ -239,10 +239,10 @@
 
 
   <div class="article-container">
-    <h1 itemprop="name">Embodied Real-World Active Perception</h1>
+    <h1 itemprop="name">Mid-Level Visual Representations Improve Generalization and Sample Efficiency for Learning Visuomotor Policies</h1>
     <span class="pub-authors" itemprop="author">
       
-      Fei Xia*, Zhiyang He*, Amir Zamir*, <strong>Alexander Sax</strong>, Jitendra Malik, Silvio Savarese
+      <strong>Alexander Sax</strong>, Jeffrey O. Zhang, Bradley Emi, Amir Zamir, Leonidas Guibas, Silvio Savarese, Jitendra Malik
       
     </span>
     <span class="pull-right">
@@ -251,35 +251,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Embodied%20Real-World%20Active%20Perception&amp;url=https%3a%2f%2falexsax.github.io%2fpublication%2fgibson%2f"
+         href="https://twitter.com/intent/tweet?text=Mid-Level%20Visual%20Representations%20Improve%20Generalization%20and%20Sample%20Efficiency%20for%20Learning%20Visuomotor%20Policies&amp;url=https%3a%2f%2falexsax.github.io%2fpublication%2fmidlevelbaylearn%2f"
          target="_blank" rel="noopener">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2falexsax.github.io%2fpublication%2fgibson%2f"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2falexsax.github.io%2fpublication%2fmidlevelbaylearn%2f"
          target="_blank" rel="noopener">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2falexsax.github.io%2fpublication%2fgibson%2f&amp;title=Embodied%20Real-World%20Active%20Perception"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2falexsax.github.io%2fpublication%2fmidlevelbaylearn%2f&amp;title=Mid-Level%20Visual%20Representations%20Improve%20Generalization%20and%20Sample%20Efficiency%20for%20Learning%20Visuomotor%20Policies"
          target="_blank" rel="noopener">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2falexsax.github.io%2fpublication%2fgibson%2f&amp;title=Embodied%20Real-World%20Active%20Perception"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2falexsax.github.io%2fpublication%2fmidlevelbaylearn%2f&amp;title=Mid-Level%20Visual%20Representations%20Improve%20Generalization%20and%20Sample%20Efficiency%20for%20Learning%20Visuomotor%20Policies"
          target="_blank" rel="noopener">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Embodied%20Real-World%20Active%20Perception&amp;body=https%3a%2f%2falexsax.github.io%2fpublication%2fgibson%2f">
+         href="mailto:?subject=Mid-Level%20Visual%20Representations%20Improve%20Generalization%20and%20Sample%20Efficiency%20for%20Learning%20Visuomotor%20Policies&amp;body=https%3a%2f%2falexsax.github.io%2fpublication%2fmidlevelbaylearn%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -290,12 +290,12 @@
     </span>
 
     
-    <img src="/img/gibson.png" class="pub-banner" itemprop="image">
+    <img src="/img/midlevel.png" class="pub-banner" itemprop="image">
     
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract" itemprop="text">Perception and being active (i.e. having a certain level of motion freedom) are closely tied. Learning active perception and sensorimotor control in the physical world is cumbersome as existing algorithms are too slow to efficiently learn in real-time and robots are fragile and costly. This has given rise to learning in simulation which consequently casts a question on transferring to real-world. In this paper, we study learning <strong>perception</strong> for <strong>active agents</strong> in <strong>real-world</strong>, propose a virtual environment for this purpose, and demonstrate complex learned locomotion abilities. The primary characteristics of the learning environments, which transfer into the trained agents, are I) being from the real-world and reflecting its semantic complexity, II) having a mechanism to ensure no need to further domain adaptation prior to deployment of results in real-world, III) embodiment of the agent and making it subject to constraints of space and physics.</p>
+    <p class="pub-abstract" itemprop="text">How much does having <strong>visual priors about the world</strong> (e.g. the fact that the world is 3D) assist in learning to perform <strong>downstream motor tasks</strong> (e.g. delivering a package)? We study this question by integrating a generic perceptual skill set (e.g. a distance estimator, an edge detector, etc.) within a reinforcement learning framework&ndash;see Figure 1. This skill set (hereafter <strong>mid-level perception</strong>) provides the policy with a more processed state of the world compared to raw images. </br> We find that using a mid-level perception confers significant advantages over training end-to-end from scratch (i.e. not leveraging priors) in navigation-oriented tasks. Agents are able to generalize to situations where the from-scratch approach fails and training becomes significantly more sample efficient. However, we show that realizing these gains requires careful selection of the mid-level perceptual skills. Therefore, we refine our findings into an efficient max-coverage feature set that can be adopted in lieu of raw images. We perform our study in completely separate buildings for training and testing and compare against visually blind baseline policies and state-of-the-art feature learning methods.</p>
     
 
     
@@ -324,7 +324,7 @@
       <div class="col-sm-10">
         <div class="row">
           <div class="col-xs-12 col-sm-3 pub-row-heading">Publication</div>
-          <div class="col-xs-12 col-sm-9">In <em>Conference on Computer Vision and Pattern Recognition, IEEE</em></div>
+          <div class="col-xs-12 col-sm-9">In <em>Bay Area Machine Learning Symposium</em>  <em>(Oral)</em></div>
         </div>
       </div>
       <div class="col-sm-1"></div>
@@ -338,7 +338,7 @@
         <div class="row">
           <div class="col-xs-12 col-sm-3 pub-row-heading">Date</div>
           <div class="col-xs-12 col-sm-9" itemprop="datePublished">
-            February, 2018
+            September, 2019
           </div>
         </div>
       </div>
@@ -357,8 +357,12 @@
 
 
 
+<a class="btn btn-primary btn-outline" href="https://perceptual.actor/assets/main_paper.pdf" target="_blank" rel="noopener">
+  Preprint
+</a>
 
-<a class="btn btn-primary btn-outline" href="http://gibsonenv.stanford.edu/Gibson_CVPR2018.pdf" target="_blank" rel="noopener">
+
+<a class="btn btn-primary btn-outline" href="https://perceptual.actor/assets/main_paper.pdf" target="_blank" rel="noopener">
   PDF
 </a>
 
@@ -366,7 +370,7 @@
 
 
 
-<a class="btn btn-primary btn-outline" href="https://github.com/StanfordVL/GibsonEnv" target="_blank" rel="noopener">
+<a class="btn btn-primary btn-outline" href="https://github.com/alexsax/midlevel-reps" target="_blank" rel="noopener">
   Code
 </a>
 
@@ -377,13 +381,19 @@
 
 
 
-<a class="btn btn-primary btn-outline" href="http://gibson.vision" target="_blank" rel="noopener">
-  Project
+  
+  <a class="btn btn-primary btn-outline" href="https://alexsax.github.io/project/locality-prior/">
+    Project
+  </a>
+  
+
+
+
+
+
+<a class="btn btn-primary btn-outline" href="https://youtu.be/HtefpenfxTQ" target="_blank" rel="noopener">
+  Video
 </a>
-
-
-
-
 
 
 
@@ -398,7 +408,7 @@
 
     <div class="space-below"></div>
 
-    <div class="article-style"><p>See the <a href="http://gibson.vision" target="_blank">main website</a> for interactive tools to explore the dataset as well as an explanation of the methodology.</p>
+    <div class="article-style"><p>See the <a href="http://perceptual.actor" target="_blank">main website</a> for demos of each policy, including vidos of random rollouts and average reward curves in train and test environments. More results are available, as well as code and an overview video.</p>
 </div>
 
     

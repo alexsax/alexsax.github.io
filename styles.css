@@ -762,6 +762,10 @@ article .article-metadata {
   color: #090;
   font-size: 1rem;
 }
+.pub-list-item > div[itemprop="author"] {
+  color: #666666;
+  font-size: 0.8rem;
+}
 
 .pub-list-item .pub-links {
   padding-top: 10px;
