@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme" content="hugo-academic">
-  <meta name="generator" content="Hugo 0.42.1" />
+  <meta name="generator" content="Hugo 0.55.6" />
   <meta name="author" content="Alexander (Sasha) Sax">
 
   
@@ -17,7 +17,7 @@
       
     
   
-  <meta name="description" content="FMRI images of the brain reveal that there is significant neuronal clustering of activations. It is believed that these correlated activations indicate areas of the brain with functional specificity. These areas function at various levels of abstraction, from low-level sensorimotor tasks, to mid-level identification of faces, and even very abstract things such as thinking about another&rsquo;s thoughts [2]. The brain has specific activation patterns in response to different visual inputs, and the object being viewed can be decoded from these patterns [3].">
+  <meta name="description" content="A wiring cost for neural networks.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://alexsax.github.io/project/locality-prior/">
@@ -46,7 +46,7 @@
   
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.1/css/academicons.min.css" integrity="sha512-NThgw3XKQ1absAahW6to7Ey42uycrVvfNfyjqcFNgCmOCQ5AR4AO0SiXrN+8ZtYeappp56lk1WtvjVmEa+VR6A==" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
   
@@ -64,7 +64,6 @@
     <script>
       window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
       ga('create', 'UA-103177001-1', 'auto');
-      
       ga('require', 'eventTracker');
       ga('require', 'outboundLinkTracker');
       ga('require', 'urlChangeTracker');
@@ -89,7 +88,7 @@
   <meta property="og:site_name" content="Sasha Sax">
   <meta property="og:url" content="https://alexsax.github.io/project/locality-prior/">
   <meta property="og:title" content="Locality Prior | Sasha Sax">
-  <meta property="og:description" content="FMRI images of the brain reveal that there is significant neuronal clustering of activations. It is believed that these correlated activations indicate areas of the brain with functional specificity. These areas function at various levels of abstraction, from low-level sensorimotor tasks, to mid-level identification of faces, and even very abstract things such as thinking about another&rsquo;s thoughts [2]. The brain has specific activation patterns in response to different visual inputs, and the object being viewed can be decoded from these patterns [3]."><meta property="og:image" content="https://alexsax.github.io/img/headers/locality_prior.jpg">
+  <meta property="og:description" content="A wiring cost for neural networks."><meta property="og:image" content="https://alexsax.github.io/img/headers/locality_prior.jpg">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2017-06-14T00:00:00&#43;00:00">
@@ -97,7 +96,6 @@
   <meta property="article:modified_time" content="2017-06-14T00:00:00&#43;00:00">
   
 
-  
   
 
   <title>Locality Prior | Sasha Sax</title>
@@ -238,11 +236,7 @@
 
   
 <div class="article-header">
-  
-  
-    <img src="/img/headers/locality_prior.jpg" class="article-banner" itemprop="image">
-  
-
+  <img src="/img/headers/locality_prior.jpg" class="article-banner" itemprop="image">
   <span class="article-header-caption">Some figures from thhe readme</span>
 </div>
 
@@ -320,7 +314,7 @@
 
 <div class="article-tags">
   
-  <a class="btn btn-primary btn-outline" href="https://alexsax.github.io/tags/vision/">vision</a>
+  <a class="btn btn-primary btn-outline" href="/tags/vision">vision</a>
   
 </div>
 
@@ -335,69 +329,6 @@
       
       
       
-      
-        <h2>Publications</h2>
-        
-          
-            <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  
-  <b><a href="http://perceptual.actor" itemprop="name">Mid-Level Visual Representations Improve Generalization and Sample Efficiency for Learning Visuomotor Policies</a></b> <i class="fa fa-file-text-o pub-icon" aria-hidden="true"></i>
-  <div itemprop="author">
-    <strong>Alexander Sax</strong>, Jeffrey O. Zhang, Bradley Emi, Amir Zamir, Leonidas Guibas, Silvio Savarese, Jitendra Malik.
-    In <em>BayLearn</em>, 2019. <strong>[Oral]</strong>
-    
-    
-  </div>
-
-  <p>
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://perceptual.actor/assets/main_paper.pdf" target="_blank" rel="noopener">
-  Preprint
-</a>
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://perceptual.actor/assets/main_paper.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://github.com/alexsax/midlevel-reps" target="_blank" rel="noopener">
-  Code
-</a>
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="http://gibson.vision/platform" target="_blank" rel="noopener">
-  Dataset
-</a>
-
-
-
-  
-  <a class="btn btn-primary btn-outline btn-xs" href="https://alexsax.github.io/project/locality-prior/">
-    Project
-  </a>
-  
-
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://youtu.be/HtefpenfxTQ" target="_blank" rel="noopener">
-  Video
-</a>
-
-
-
-</p>
-</div>
-
-          
-        
       
 
       
@@ -415,7 +346,7 @@
   <div class="container">
     <p class="powered-by">
 
-      &copy; 2017 Sasha Sax &middot; 
+      &copy; 2017-2002 Sasha Sax &middot; 
 
       Powered by the
       <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for

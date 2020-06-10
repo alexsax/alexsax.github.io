@@ -52,19 +52,6 @@ body {
   }
 }
 
-.max-width-640 {
-  max-width: 640px;
-}
-
-.margin-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.center-text {
-  text-align: center;
-}
-
 /* Body text */
 p {
   margin-top: 0;
@@ -93,7 +80,6 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.25;
   color: #313131;
   text-rendering: optimizeLegibility;
-  overflow-wrap: break-word; /* Ensures very long heading words do not overflow into content. */
 }
 h1 {
   font-size: 2.25rem;
@@ -132,15 +118,15 @@ video {
   display: block;
 }
 
-video {
-  width: 100%;
-  height: auto;
-  max-height: 400px;
-}
-
 .img-responsive {
   /* Extend Bootstrap declaration with centering. */
   margin: 0 auto;
+}
+
+figcaption:before {
+  font-weight: 700;
+  text-transform: uppercase;
+  content: "Figure " counter(captions) ": ";
 }
 
 figcaption {
@@ -150,20 +136,11 @@ figcaption {
   font-size: 1rem;
   margin-bottom: 1.65rem;
   font-family: 'Montserrat', sans-serif;
-}
-
-figcaption.numbered:before {
-  font-weight: 700;
-  text-transform: uppercase;
-  content: attr(data-pre) counter(captions) attr(data-post);
-}
-
-figcaption.numbered {
   counter-increment: captions;
 }
 
 figcaption h4 {
-  display: inline;
+  display: inline-block;
   font-size: 1rem;
   font-weight: 400;
   margin: 0;
@@ -178,13 +155,9 @@ code {
 
 pre {
   margin: 0 0 1rem 0;
+  overflow: auto;
   background-color: rgb(248, 248, 248); /* Match default highlight theme. */
   border-color: rgb(248, 248, 248);
-}
-
-pre code {
-  white-space: pre; /* Override Bootstrap to preserve line breaks in code. */
-  overflow-x: auto;
 }
 
 hr {
@@ -211,11 +184,6 @@ blockquote p:last-child {
   }
 }
 
-.markup-quote {
-  background-color: transparent;
-  background-image: linear-gradient(to bottom, rgba(233, 231, 245, 1), rgba(233, 231, 245, 1));
-}
-
 .space-below {
   margin-bottom: 50px;
 }
@@ -240,10 +208,6 @@ blockquote p:last-child {
 small,
 .small {
   font-size: .75em;
-}
-
-.responsive-wrap iframe {
-  max-width: 100%;
 }
 
 /*************************************************
@@ -490,7 +454,6 @@ a[data-fancybox] img {
   display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
   list-style: none;
   padding: 0;
   margin-top: 30px;
@@ -647,17 +610,12 @@ article {
 }
 
 .article-metadata {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  line-height: 30px; /* Match share bar line height. */
   overflow: hidden;
   font-size: 14px;
   letter-spacing: 0.03em;
   color: #888;
-}
-
-/* For article page only, not lists. */
-article .article-metadata {
-  margin-bottom: 20px;
-  line-height: 30px; /* Match share bar line height. */
 }
 
 .article-metadata a {
@@ -666,6 +624,18 @@ article .article-metadata {
 
 .article-metadata a:hover {
   color: #3f51b5;
+}
+
+.article-list-item {
+  margin-bottom: 40px;
+}
+
+.article-list-item:last-child {
+  margin-bottom: 0 !important;
+}
+
+.article-list-item .article-metadata {
+  margin-bottom: 5px;
 }
 
 .middot-divider {
@@ -680,11 +650,13 @@ article .article-metadata {
 
 .article-style img,
 .article-style video {
+  box-shadow: 1px 1px 0px #edefed, -1px -1px 0px #edefed, 1px -1px 0px #edefed, -1px 1px 0px #edefed;
   margin-left: auto;
   margin-right: auto;
   margin-top: 60px;
   margin-bottom: 60px;
-  padding: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .article-style td img,
@@ -738,6 +710,10 @@ article .article-metadata {
   margin-right: auto;
 }
 
+.pub .pub-title {
+  margin-bottom: 5px;
+}
+
 .pub .pub-authors {
   font-style: italic;
   line-height: 30px; /* Match share bar line height. */
@@ -745,6 +721,10 @@ article .article-metadata {
 
 .pub .pub-row-heading {
   font-weight: bold;
+}
+
+.pub-list-item {
+  margin-bottom: 40px;
 }
 
 .pub-list-item .pub-abstract {
@@ -761,10 +741,6 @@ article .article-metadata {
 .pub-list-item .pub-publication {
   color: #090;
   font-size: 1rem;
-}
-.pub-list-item > div[itemprop="author"] {
-  color: #666666;
-  font-size: 0.8rem;
 }
 
 .pub-list-item .pub-links {
@@ -838,29 +814,6 @@ article .article-metadata {
 /*************************************************
  *  Card component
  **************************************************/
-
-.card-simple {
-  background: #fff;
-  box-shadow: 0 1px 4px rgba(0,0,0,.04);
-  border: 1px solid rgba(0,0,0,.09);
-  border-radius: 3px;
-  margin-top: 20px;
-  padding: 15px 20px 15px 20px;
-}
-
-.card-simple:first-of-type {
-  margin-top: 0;
-}
-
-.card-simple p.read-more {
-  margin: 0;
-}
-
-.dark .card-simple {
-  background: rgb(40, 42, 54);
-  box-shadow: 0 1px 4px rgba(0,0,0,.04);
-  border: 1px solid rgb(68, 71, 90);
-}
 
 .card {
   margin-bottom: 1.5rem;
@@ -1479,14 +1432,6 @@ body.dark {
 .dark pre {
   background-color: rgb(68, 71, 90);
   border-color: rgb(68, 71, 90);
-}
-
-.dark .markup-quote {
-  background-image: linear-gradient(to bottom, rgba(233, 231, 245, 0.2), rgba(233, 231, 245, 0.2));
-}
-
-.dark #MathJax_Zoom {
-  background-color: rgb(68, 71, 90) !important;
 }
 
 .dark ul.share li a {

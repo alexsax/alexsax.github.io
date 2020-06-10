@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Vision on Sasha Sax</title>
+    <title>vision on Sasha Sax</title>
     <link>https://alexsax.github.io/tags/vision/</link>
-    <description>Recent content in Vision on Sasha Sax</description>
+    <description>Recent content in vision on Sasha Sax</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2017 Sasha Sax</copyright>
+    <copyright>&amp;copy; 2017-2002 Sasha Sax</copyright>
     <lastBuildDate>Wed, 14 Jun 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://alexsax.github.io/tags/vision/index.xml" rel="self" type="application/rss+xml" />
@@ -18,7 +18,7 @@
       <pubDate>Wed, 14 Jun 2017 00:00:00 +0000</pubDate>
       
       <guid>https://alexsax.github.io/project/locality-prior/</guid>
-      <description>FMRI images of the brain reveal that there is significant neuronal clustering of activations. It is believed that these correlated activations indicate areas of the brain with functional specificity. These areas function at various levels of abstraction, from low-level sensorimotor tasks, to mid-level identification of faces, and even very abstract things such as thinking about another&amp;rsquo;s thoughts [2]. The brain has specific activation patterns in response to different visual inputs, and the object being viewed can be decoded from these patterns [3].</description>
+      <description>A wiring cost for neural networks.</description>
     </item>
     
   </channel>

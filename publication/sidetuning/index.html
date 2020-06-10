@@ -17,10 +17,10 @@
       
     
   
-  <meta name="description" content="Would having surface normals simplify the depth estimation of an image?	Do visual tasks have a relationship, or are they unrelated?	Common sense suggests that visual tasks are interdependent, implying the existence of structure among tasks. However, a proper model is needed for the structure to be actionable, e.g., to reduce the supervision required by utilizing task relationships. We therefore ask: which tasks transfer to an arbitrary target task, and how well? Or, how do we learn a set of tasks collectively, with less total supervision? These are some of the questions that can be answered by a computational model of the vision tasks space, as proposed in this paper. We explore the task structure utilizing a sampled dictionary of 2D, 2.5D, 3D, and semantic tasks, and modeling their (1st and higher order) transfer behaviors in a latent space. The product can be viewed as a computational task taxonomy (Taskonomy) and a map of the task space. We study the consequences of this structure, e.g., the emerging task relationships, and exploit them to reduce supervision demand. For instance, we show that the total number of labeled datapoints needed to solve a set of 10 tasks can be reduced to 1/4 while keeping performance nearly the same by using features from multiple proxy tasks. Users can employ a provided Binary Integer Programming solver that leverages the taxonomy to find efficient supervision policies for their own use cases.">
+  <meta name="description" content="When training a neural network for a desired task, one may prefer to adapt a pre-trained network rather than start with a randomly initialized one -- due to lacking enough training data, performing lifelong learning where the system has to learn a new task while being previously trained for other tasks, or wishing to encode priors in the network via preset weights. The most commonly employed approaches for network adaptation are fine-tuning and using the pre-trained network as a fixed feature extractor, among others. &lt;br&gt; In this paper we propose a straightforward alternative: Side-Tuning. Side-tuning adapts a pre-trained network by training a lightweight ;&#39;side&#39; network that is fused with the (unchanged) pre-trained network using a simple additive process. This simple method works as well as or better than existing solutions while it resolves some of the basic issues with fine-tuning, fixed features, and several other common baselines. In particular, side-tuning is less prone to overfitting when little training data is available, yields better results than using a fixed feature extractor, and does not suffer from catastrophic forgetting in lifelong learning. We demonstrate the performance of side-tuning under a diverse set of scenarios, including lifelong learning (iCIFAR, Taskonomy), reinforcement learning, imitation learning (visual navigation in Habitat), NLP question-answering (SQuAD v2), and single-task transfer learning (Taskonomy), with consistently promising results.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://alexsax.github.io/publication/taskonomy/">
+  <link rel="alternate" hreflang="en-us" href="https://alexsax.github.io/publication/sidetuning/">
 
   
 
@@ -81,24 +81,24 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://alexsax.github.io/publication/taskonomy/">
+  <link rel="canonical" href="https://alexsax.github.io/publication/sidetuning/">
 
   <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="Sasha Sax">
-  <meta property="og:url" content="https://alexsax.github.io/publication/taskonomy/">
-  <meta property="og:title" content="Taskonomy: Disentangling Task Transfer Learning | Sasha Sax">
-  <meta property="og:description" content="Would having surface normals simplify the depth estimation of an image?	Do visual tasks have a relationship, or are they unrelated?	Common sense suggests that visual tasks are interdependent, implying the existence of structure among tasks. However, a proper model is needed for the structure to be actionable, e.g., to reduce the supervision required by utilizing task relationships. We therefore ask: which tasks transfer to an arbitrary target task, and how well? Or, how do we learn a set of tasks collectively, with less total supervision? These are some of the questions that can be answered by a computational model of the vision tasks space, as proposed in this paper. We explore the task structure utilizing a sampled dictionary of 2D, 2.5D, 3D, and semantic tasks, and modeling their (1st and higher order) transfer behaviors in a latent space. The product can be viewed as a computational task taxonomy (Taskonomy) and a map of the task space. We study the consequences of this structure, e.g., the emerging task relationships, and exploit them to reduce supervision demand. For instance, we show that the total number of labeled datapoints needed to solve a set of 10 tasks can be reduced to 1/4 while keeping performance nearly the same by using features from multiple proxy tasks. Users can employ a provided Binary Integer Programming solver that leverages the taxonomy to find efficient supervision policies for their own use cases.">
+  <meta property="og:url" content="https://alexsax.github.io/publication/sidetuning/">
+  <meta property="og:title" content="Side-Tuning: A Baseline for Network Adaptation via Additive Side Networks | Sasha Sax">
+  <meta property="og:description" content="When training a neural network for a desired task, one may prefer to adapt a pre-trained network rather than start with a randomly initialized one -- due to lacking enough training data, performing lifelong learning where the system has to learn a new task while being previously trained for other tasks, or wishing to encode priors in the network via preset weights. The most commonly employed approaches for network adaptation are fine-tuning and using the pre-trained network as a fixed feature extractor, among others. &lt;br&gt; In this paper we propose a straightforward alternative: Side-Tuning. Side-tuning adapts a pre-trained network by training a lightweight ;&#39;side&#39; network that is fused with the (unchanged) pre-trained network using a simple additive process. This simple method works as well as or better than existing solutions while it resolves some of the basic issues with fine-tuning, fixed features, and several other common baselines. In particular, side-tuning is less prone to overfitting when little training data is available, yields better results than using a fixed feature extractor, and does not suffer from catastrophic forgetting in lifelong learning. We demonstrate the performance of side-tuning under a diverse set of scenarios, including lifelong learning (iCIFAR, Taskonomy), reinforcement learning, imitation learning (visual navigation in Habitat), NLP question-answering (SQuAD v2), and single-task transfer learning (Taskonomy), with consistently promising results.">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2018-02-20T00:00:00&#43;00:00">
+  <meta property="article:published_time" content="2020-04-01T00:00:00&#43;00:00">
   
-  <meta property="article:modified_time" content="2018-02-20T00:00:00&#43;00:00">
-  
-
+  <meta property="article:modified_time" content="2020-04-01T00:00:00&#43;00:00">
   
 
-  <title>Taskonomy: Disentangling Task Transfer Learning | Sasha Sax</title>
+  
+
+  <title>Side-Tuning: A Baseline for Network Adaptation via Additive Side Networks | Sasha Sax</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
@@ -237,10 +237,10 @@
 
 
   <div class="container pub-title">
-    <h1 itemprop="name">Taskonomy: Disentangling Task Transfer Learning</h1>
+    <h1 itemprop="name">Side-Tuning: A Baseline for Network Adaptation via Additive Side Networks</h1>
     <span class="pub-authors" itemprop="author">
       
-      Amir Zamir, <strong>Alexander Sax*</strong>, Bokui Shen*, Leonidas Guibas, Jitendra Malik, Silvio Savarese
+      Jeffrey O. Zhang, <strong>Alexander Sax</strong>, Amir R. Zamir, Leonidas Guibas, Jitendra Malik
       
     </span>
     <span class="pull-right">
@@ -249,35 +249,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Taskonomy%3a%20Disentangling%20Task%20Transfer%20Learning&amp;url=https%3a%2f%2falexsax.github.io%2fpublication%2ftaskonomy%2f"
+         href="https://twitter.com/intent/tweet?text=Side-Tuning%3a%20A%20Baseline%20for%20Network%20Adaptation%20via%20Additive%20Side%20Networks&amp;url=https%3a%2f%2falexsax.github.io%2fpublication%2fsidetuning%2f"
          target="_blank" rel="noopener">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2falexsax.github.io%2fpublication%2ftaskonomy%2f"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2falexsax.github.io%2fpublication%2fsidetuning%2f"
          target="_blank" rel="noopener">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2falexsax.github.io%2fpublication%2ftaskonomy%2f&amp;title=Taskonomy%3a%20Disentangling%20Task%20Transfer%20Learning"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2falexsax.github.io%2fpublication%2fsidetuning%2f&amp;title=Side-Tuning%3a%20A%20Baseline%20for%20Network%20Adaptation%20via%20Additive%20Side%20Networks"
          target="_blank" rel="noopener">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2falexsax.github.io%2fpublication%2ftaskonomy%2f&amp;title=Taskonomy%3a%20Disentangling%20Task%20Transfer%20Learning"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2falexsax.github.io%2fpublication%2fsidetuning%2f&amp;title=Side-Tuning%3a%20A%20Baseline%20for%20Network%20Adaptation%20via%20Additive%20Side%20Networks"
          target="_blank" rel="noopener">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Taskonomy%3a%20Disentangling%20Task%20Transfer%20Learning&amp;body=https%3a%2f%2falexsax.github.io%2fpublication%2ftaskonomy%2f">
+         href="mailto:?subject=Side-Tuning%3a%20A%20Baseline%20for%20Network%20Adaptation%20via%20Additive%20Side%20Networks&amp;body=https%3a%2f%2falexsax.github.io%2fpublication%2fsidetuning%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -291,12 +291,12 @@
   <div class="article-container">
 
     
-    <img src="/img/taskonomy.png" class="pub-banner" itemprop="image">
+    <img src="/img/sidetuning_pull.png" class="pub-banner" itemprop="image">
     
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract" itemprop="text">Would having surface normals simplify the depth estimation of an image? Do visual tasks have a relationship, or are they unrelated? Common sense suggests that visual tasks are interdependent, implying the existence of structure among tasks. However, a proper model is needed for the structure to be actionable, e.g., to reduce the supervision required by utilizing task relationships. We therefore ask: which tasks transfer to an arbitrary target task, and how well? Or, how do we learn a set of tasks collectively, with less total supervision? These are some of the questions that can be answered by a computational model of the vision tasks space, as proposed in this paper. We explore the task structure utilizing a sampled dictionary of 2D, 2.5D, 3D, and semantic tasks, and modeling their (1st and higher order) transfer behaviors in a latent space. The product can be viewed as a computational task taxonomy (Taskonomy) and a map of the task space. We study the consequences of this structure, e.g., the emerging task relationships, and exploit them to reduce supervision demand. For instance, we show that the total number of labeled datapoints needed to solve a set of 10 tasks can be reduced to <sup>1</sup>&frasl;<sub>4</sub> while keeping performance nearly the same by using features from multiple proxy tasks. Users can employ a provided Binary Integer Programming solver that leverages the taxonomy to find efficient supervision policies for their own use cases.</p>
+    <p class="pub-abstract" itemprop="text">When training a neural network for a desired task, one may prefer to adapt a pre-trained network rather than start with a randomly initialized one &ndash; due to lacking enough training data, performing lifelong learning where the system has to learn a new task while being previously trained for other tasks, or wishing to encode priors in the network via preset weights. The most commonly employed approaches for network adaptation are fine-tuning and using the pre-trained network as a fixed feature extractor, among others. <br> In this paper we propose a straightforward alternative: Side-Tuning. Side-tuning adapts a pre-trained network by training a lightweight ;&lsquo;side&rsquo; network that is fused with the (unchanged) pre-trained network using a simple additive process. This simple method works as well as or better than existing solutions while it resolves some of the basic issues with fine-tuning, fixed features, and several other common baselines. In particular, side-tuning is less prone to overfitting when little training data is available, yields better results than using a fixed feature extractor, and does not suffer from catastrophic forgetting in lifelong learning. We demonstrate the performance of side-tuning under a diverse set of scenarios, including lifelong learning (iCIFAR, Taskonomy), reinforcement learning, imitation learning (visual navigation in Habitat), NLP question-answering (SQuAD v2), and single-task transfer learning (Taskonomy), with consistently promising results.</p>
     
 
     
@@ -320,18 +320,6 @@
     
 
     
-    <div class="row">
-      <div class="col-sm-1"></div>
-      <div class="col-sm-10">
-        <div class="row">
-          <div class="col-xs-12 col-sm-3 pub-row-heading">Publication</div>
-          <div class="col-xs-12 col-sm-9">In <em>Conference on Computer Vision and Pattern Recognition, IEEE</em></div>
-        </div>
-      </div>
-      <div class="col-sm-1"></div>
-    </div>
-    <div class="visible-xs space-below"></div>
-    
 
     <div class="row">
       <div class="col-sm-1"></div>
@@ -339,7 +327,7 @@
         <div class="row">
           <div class="col-xs-12 col-sm-3 pub-row-heading">Date</div>
           <div class="col-xs-12 col-sm-9" itemprop="datePublished">
-            February, 2018
+            April, 2020
           </div>
         </div>
       </div>
@@ -359,7 +347,7 @@
 
 
 
-<a class="btn btn-primary btn-outline" href="https://arxiv.org/abs/1804.08328" target="_blank" rel="noopener">
+<a class="btn btn-primary btn-outline" href="https://arxiv.org/pdf/1912.13503" target="_blank" rel="noopener">
   PDF
 </a>
 
@@ -367,18 +355,14 @@
 
 
 
-<a class="btn btn-primary btn-outline" href="http://taskonomy.vision#models" target="_blank" rel="noopener">
+<a class="btn btn-primary btn-outline" href="https://github.com/jozhang97/side-tuning" target="_blank" rel="noopener">
   Code
 </a>
 
 
-<a class="btn btn-primary btn-outline" href="http://taskonomy.vision#data" target="_blank" rel="noopener">
-  Dataset
-</a>
 
 
-
-<a class="btn btn-primary btn-outline" href="http://taskonomy.vision" target="_blank" rel="noopener">
+<a class="btn btn-primary btn-outline" href="http://sidetuning.berkeley.edu" target="_blank" rel="noopener">
   Project
 </a>
 
@@ -399,7 +383,7 @@
 
     <div class="space-below"></div>
 
-    <div class="article-style"><p>See the <a href="http://taskonomy.vision" target="_blank">main website</a> for live demos of the API and task-specific networks, as well as pretrained models, samples from the transfer networks, and also explanations of the methodology.</p>
+    <div class="article-style"><p>See the <a href="http://sidetuning.berkeley.edu" target="_blank">main website</a> for live demos, as well as pretrained models, samples from the transfer networks, code, and also explanations of the methodology.</p>
 </div>
 
     

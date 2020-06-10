@@ -6,8 +6,8 @@
     <description>Recent content in Homes on Sasha Sax</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2017 Sasha Sax</copyright>
-    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <copyright>&amp;copy; 2017-2002 Sasha Sax</copyright>
+    <lastBuildDate>Mon, 24 Jul 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://alexsax.github.io/home/index.xml" rel="self" type="application/rss+xml" />
     
@@ -18,7 +18,7 @@
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>https://alexsax.github.io/home/about/</guid>
-      <description>Biography I am a second-year Ph.D. student in UC Berkeley&amp;rsquo;s EECS program, where I am advised by Jitendra Malik. Before coming to Berkeley, I was at Stanford where I completed my M.Sc. in Computer Science, advised by Silvio Savarese, and my B.Sc. in Math.
+      <description>Biography I am a third-year Ph.D. student at UC Berkeley, where I am jontly advised by Jitendra Malik and Amir Zamir (at EPFL). Before coming to Berkeley, I was at Stanford where I completed my M.Sc. in Computer Science, advised by Silvio Savarese. I received my B.Sc. in Math, also from Stanford.
 My research interests are in building general and flexible autonomous systems. These systems should be able to learn new things with minimal amounts of extra data (for example, by leveraging prior world knowledge).</description>
     </item>
     

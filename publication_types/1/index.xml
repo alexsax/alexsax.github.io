@@ -6,11 +6,29 @@
     <description>Recent content in 1 on Sasha Sax</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2017 Sasha Sax</copyright>
-    <lastBuildDate>Tue, 24 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <copyright>&amp;copy; 2017-2002 Sasha Sax</copyright>
+    <lastBuildDate>Mon, 01 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://alexsax.github.io/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Robust Learning Through Cross-Task Consistency</title>
+      <link>https://alexsax.github.io/publication/consistency/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexsax.github.io/publication/consistency/</guid>
+      <description>See the main website for live demos, as well as pretrained models, samples from the transfer networks, code, and also explanations of the methodology.</description>
+    </item>
+    
+    <item>
+      <title>Side-Tuning: A Baseline for Network Adaptation via Additive Side Networks</title>
+      <link>https://alexsax.github.io/publication/sidetuning/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexsax.github.io/publication/sidetuning/</guid>
+      <description>See the main website for live demos, as well as pretrained models, samples from the transfer networks, code, and also explanations of the methodology.</description>
+    </item>
     
     <item>
       <title>Learning to Navigate Using Mid-Level Visual Priors</title>
@@ -18,15 +36,6 @@
       <pubDate>Tue, 24 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>https://alexsax.github.io/publication/midlevelcorl/</guid>
-      <description>See the main website for demos of each policy, including vidos of random rollouts and average reward curves in train and test environments. More results are available, as well as code and an overview video.</description>
-    </item>
-    
-    <item>
-      <title>Mid-Level Visual Representations Improve Generalization and Sample Efficiency for Learning Visuomotor Policies</title>
-      <link>https://alexsax.github.io/publication/midlevelbaylearn/</link>
-      <pubDate>Fri, 20 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://alexsax.github.io/publication/midlevelbaylearn/</guid>
       <description>See the main website for demos of each policy, including vidos of random rollouts and average reward curves in train and test environments. More results are available, as well as code and an overview video.</description>
     </item>
     
