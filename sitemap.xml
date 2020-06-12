@@ -1,209 +1,192 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
-    
-    
-    <url>
-    
-      <loc>https://alexsax.github.io/publication_types/1/</loc>
-      <lastmod>2020-06-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>/publication-type/1/</loc>
+    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>https://alexsax.github.io/publication_types/</loc>
-      <lastmod>2020-06-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>https://alexsax.github.io/publication/consistency/</loc>
-      <lastmod>2020-06-01T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>/author/alexander-sax/</loc>
+    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>https://alexsax.github.io/</loc>
-      <lastmod>2020-06-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>/author/amir-zamir/</loc>
+    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>https://alexsax.github.io/publication/sidetuning/</loc>
-      <lastmod>2020-04-01T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>/authors/</loc>
+    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>https://alexsax.github.io/publication/midlevelcorl/</loc>
-      <lastmod>2019-09-24T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>/author/jitendra-malik/</loc>
+    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>https://alexsax.github.io/publication/taskonomy/</loc>
-      <lastmod>2018-02-20T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>/author/leonidas-guibas/</loc>
+    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>https://alexsax.github.io/publication/gibson/</loc>
-      <lastmod>2018-02-19T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>/author/nikhil-cheerla/</loc>
+    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>https://alexsax.github.io/project/locality-prior/</loc>
-      <lastmod>2017-06-14T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>/author/oguzhan-faith-kar/</loc>
+    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>https://alexsax.github.io/project/</loc>
-      <lastmod>2017-06-14T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>/publication_types/</loc>
+    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>https://alexsax.github.io/tags/</loc>
-      <lastmod>2017-06-14T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>/publication/</loc>
+    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>https://alexsax.github.io/tags/vision/</loc>
-      <lastmod>2017-06-14T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>/publication/consistency/</loc>
+    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>https://alexsax.github.io/publication_types/6/</loc>
-      <lastmod>2017-04-06T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>/tag/robustness/</loc>
+    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>https://alexsax.github.io/publication/2d3ds/</loc>
-      <lastmod>2017-04-06T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>/author/rohan-suri/</loc>
+    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>https://alexsax.github.io/tags/academic/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>https://alexsax.github.io/post/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>/author/teresa-yeo/</loc>
+    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>https://alexsax.github.io/publication/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>/author/zhangjie-cao/</loc>
+    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>https://alexsax.github.io/talk/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>/author/alexander-sax/</loc>
+    <lastmod>2019-01-31T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>https://alexsax.github.io/project/insult-detection/</loc>
-      <lastmod>2016-06-14T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>/author/jeffrey-o.-zhang/</loc>
+    <lastmod>2019-01-31T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>https://alexsax.github.io/project/text-summarization/</loc>
-      <lastmod>2016-06-14T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>/publication/midlevel/</loc>
+    <lastmod>2019-01-31T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>https://alexsax.github.io/tags/nlp/</loc>
-      <lastmod>2016-06-14T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>/author/silvio-savarese/</loc>
+    <lastmod>2019-01-31T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>https://alexsax.github.io/categories/</loc>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>/author/fei-xia/</loc>
+    <lastmod>2018-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/gibson/</loc>
+    <lastmod>2018-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/taskonomy/</loc>
+    <lastmod>2018-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/transfer-learning/</loc>
+    <lastmod>2018-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/william-b.-shen/</loc>
+    <lastmod>2018-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/zhiyang-he/</loc>
+    <lastmod>2018-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/2d3ds/</loc>
+    <lastmod>2017-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication-type/4/</loc>
+    <lastmod>2017-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/iro-armeni/</loc>
+    <lastmod>2017-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/deep-learning/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/demo/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/external-project/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/internal-project/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+  </url>
+  
+  <url>
+    <loc>/talk/</loc>
+  </url>
   
 </urlset>
