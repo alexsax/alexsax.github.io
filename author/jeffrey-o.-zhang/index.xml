@@ -5,12 +5,32 @@
     <link>/author/jeffrey-o.-zhang/</link>
       <atom:link href="/author/jeffrey-o.-zhang/index.xml" rel="self" type="application/rss+xml" />
     <description>Jeffrey O. Zhang</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 31 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jun 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hub2d33a37c330461bb13279ba5a0c243a_9423_512x512_fill_lanczos_center_2.png</url>
       <title>Jeffrey O. Zhang</title>
       <link>/author/jeffrey-o.-zhang/</link>
     </image>
+    
+    <item>
+      <title>Side-Tuning: A Baseline for Network Adaptation via Additive Side Networks</title>
+      <link>/publication/sidetuning/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/sidetuning/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Supplementary notes can be added here, including 
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Mid-Level Visual Priors Improve Generalization and Sample Efficiency for Learning Visuomotor Policies</title>
