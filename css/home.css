@@ -8,3 +8,22 @@
     margin-right: 30px;
     margin-bottom: 5px;
 }
+
+
+/*************************************************
+ *  Publications
+ **************************************************/
+.vertical-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pub-title {
+    font-weight: bold !important;
+}
+
+.li-cite-author a {
+    font-weight: normal;
+    color: #3170A5; 
+}
