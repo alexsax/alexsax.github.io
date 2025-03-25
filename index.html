@@ -115,6 +115,156 @@
             <tbody>
 
 
+                            
+              <tr onmouseout="fast3r_stop()" onmouseover="fast3r_start()" bgcolor="#ffffd0">
+                <td style="padding:16px;width:20%;vertical-align:middle">
+                  <div class="one" style="display: flex; align-items: center; height: 100%;">
+                    <div class="two" id='fast3r_image'><video width=100% muted autoplay loop>
+                        <source src="images/fast3r_two.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <img src='images/fast3r_one.jpg' width=100%>
+                  </div>
+                  <script type="text/javascript">
+                    function fast3r_start() {
+                      document.getElementById('fast3r_image').style.opacity = "1";
+                    }
+
+                    function fast3r_stop() {
+                      document.getElementById('fast3r_image').style.opacity = "0";
+                    }
+                    fast3r_stop()
+                  </script>
+                </td>
+                <td style="padding:8px;width:80%;vertical-align:middle">
+                  <a href="https://fast3r-3d.github.io/">
+                    <span class="papertitle">Fast3R: Towards 3D Reconstruction of 1000+ Images in One Forward Pass</span>
+                  </a>
+                  <br>
+                  <a href="https://jianningy.github.io/">Jianing Yang</a>,
+                  <strong>Alexander Sax</strong>,
+                  <a href="https://kevinjliang.github.io/">Kevin J. Liang</a>,
+                  <a href="https://mikaelhenaff.github.io/">Mikael Henaff</a>,
+                  <a href="https://htang.me/">Hao Tang</a>,
+                  <a href="https://www.linkedin.com/in/ang-cao/">Ang Cao</a>,
+                  <a href="https://web.eecs.umich.edu/~chai/">Joyce Chai</a>,
+                  <a href="https://franziskameier.github.io/">Franziska Meier</a>,
+                  <a href="https://www.linkedin.com/in/matt-feiszli/">Matt Feiszli</a>
+                  <br>
+                  <em>CVPR</em>, 2025
+                  <br>
+                  <a href="https://fast3r-3d.github.io/">project page</a> /
+                  <a href="https://arxiv.org/abs/2501.13928">arXiv</a> /
+                  <a href="https://github.com/facebookresearch/fast3r">github</a> /
+                  <a href="https://fast3r.ngrok.app/">demo</a>
+                  <p></p>
+                  <p>
+                    Replacing the entire structure-from-motion pipeline with a transformer. A purely learning-based approach for 3D reconstruction that scales well with more data and model parameters.
+                  </p>
+                </td>
+              </tr>
+
+              
+              <tr onmouseout="liftgs_stop()" onmouseover="liftgs_start()" bgcolor="#ffffff">
+                <td style="padding:16px;width:20%;vertical-align:middle">
+                  <div class="one" style="display: flex; align-items: center; height: 100%;">
+                    <div class="two" id='liftgs_image'><video width=100% muted autoplay loop>
+                        <source src="images/liftgs_two.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <img src='images/liftgs_one.jpg' width=100%>
+                  </div>
+                  <script type="text/javascript">
+                    function liftgs_start() {
+                      document.getElementById('liftgs_image').style.opacity = "1";
+                    }
+
+                    function liftgs_stop() {
+                      document.getElementById('liftgs_image').style.opacity = "0";
+                    }
+                    liftgs_stop()
+                  </script>
+                </td>
+                <td style="padding:8px;width:80%;vertical-align:middle">
+                  <a href="https://liftgs.github.io/">
+                    <span class="papertitle">LIFT-GS: Cross-Scene Render-Supervised Distillation for 3D Language Grounding</span>
+                  </a>
+                  <br>
+                  <a href="https://www.linkedin.com/in/ang-cao/">Ang Cao</a>,
+                  <a href="https://sergioarnaud.github.io/">Sergio Arnaud</a>,
+                  <a href="https://research.facebook.com/people/maksymets-oleksandr/">Oleksandr Maksymets</a>,
+                  <a href="https://jianningy.github.io/">Jianing Yang</a>,
+                  <a href="https://ayushjain.io/">Ayush Jain</a>,
+                  <a href="https://sriramyenamandra.github.io/">Sriram Yenamandra</a>,
+                  <a href="">Ada Martin</a>,
+                  <a href="https://vincentberges.github.io/">Vincent-Pierre Berges</a>,
+                  <a href="https://paulmcvay.github.io/">Paul McVay</a>,
+                  <a href="">Ruslan Partsey</a>,
+                  <a href="https://aravindr93.github.io/">Aravind Rajeswaran</a>,
+                  <a href="https://franziskameier.github.io/">Franziska Meier</a>,
+                  <a href="https://web.eecs.umich.edu/~justincj/">Justin Johnson</a>,
+                  <a href="https://jjp.cs.umich.edu/">Jeong Joon Park</a>,
+                  <strong>Alexander Sax</strong>
+                  <br>
+                  <em>arXiv</em>, 2025
+                  <br>
+                  <a href="https://liftgs.github.io/">project page</a> /
+                  <a href="https://arxiv.org/abs/2502.20389">arXiv</a>
+                  <!-- <a href="https://github.com/facebookresearch/liftgs">github (coming soon)</a> -->
+                  <p></p>
+                  <p>
+                    Image-based supervision and differentiable rendering (alone) can train 3D vision-language grounding models. This allows us to distill 3D grounding models from a 2D model.
+                  </p>
+                </td>
+              </tr>
+
+
+              <tr onmouseout="univlg_stop()" onmouseover="univlg_start()" bgcolor="#ffffff">
+                <td style="padding:16px;width:20%;vertical-align:middle">
+                  <div class="one" style="display: flex; align-items: center; height: 100%;">
+                    <div class="two" id='univlg_image'><img src="images/univlg_two.jpg" width=100%></div>
+                    <img src='images/univlg_one.jpg' width=100%>
+                  </div>
+                  <script type="text/javascript">
+                    function univlg_start() {
+                      document.getElementById('univlg_image').style.opacity = "1";
+                    }
+
+                    function univlg_stop() {
+                      document.getElementById('univlg_image').style.opacity = "0";
+                    }
+                    univlg_stop()
+                  </script>
+                </td>
+                <td style="padding:8px;width:80%;vertical-align:middle">
+                  <a href="https://univlg.github.io/">
+                    <span class="papertitle">UniVLG: Unifying 2D and 3D Vision-Language Understanding</span>
+                  </a>
+                  <br>
+                  <a href="https://ayushjain.io/">Ayush Jain*</a>,
+                  <a href="https://aswd.github.io/">Alexander Swerdlow*</a>,
+                  <a href="">Yuzhou Wang</a>,
+                  <a href="https://sergioarnaud.github.io/">Sergio Arnaud</a>,
+                  <a href="">Ada Martin</a>,
+                  <strong>Alexander Sax</strong>,
+                  <a href="https://franziskameier.github.io/">Franziska Meier</a>,
+                  <a href="https://www.cs.cmu.edu/~katef/">Katerina Fragkiadaki</a>
+                  <br>
+                  <em>arXiv</em>, 2025
+                  <br>
+                  <a href="https://univlg.github.io/">project page</a> /
+                  <a href="https://arxiv.org/abs/2503.10745">arXiv</a> /
+                  <a href="https://github.com/facebookresearch/univlg">github</a>
+                  <p></p>
+                  <p>
+                    A unified architecture for 2D and 3D vision-language understanding that achieves SotA performance in 3D vision-language tasks. It uses 2D pre-training for the encoder and introduces a SAM-like mask decoder that is language-conditioned and shared across modalities.
+                  </p>
+                </td>
+              </tr>
+
+
               <tr onmouseout="openeqa_stop()" onmouseover="openeqa_start()" bgcolor="#ffffd0">
                 <td style="padding:16px;width:20%;vertical-align:middle">
                   <div class="one" style="display: flex; align-items: center; height: 100%;">
@@ -178,7 +328,6 @@
                     An open-vocabulary benchmark for Embodied Question Answering (EQA) with a new dataset across 180+ real environments.
                     GPT-4V at 48.5% lags behind human performance (85.9%).
                     For questions that require complex spatial understanding, VLMs in December 2024 are nearly "blind". 
-                    
                   </p>
                 </td>
               </tr>
@@ -593,8 +742,6 @@
                   </p>
                 </td>
               </tr>
-
-
 
             </tbody>
           </table>
