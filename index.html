@@ -114,7 +114,45 @@
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
 
+              <tr onmouseout="locate3d_stop()" onmouseover="locate3d_start()" bgcolor="#ffffd0">
+                <td style="padding:16px;width:20%;vertical-align:middle">
+                  <div class="one" style="display: flex; align-items: center; height: 100%;">
+                    <div class="two" id='locate3d_image'><img src="images/locate3d_two.jpg" width=100%></div>
+                    <img src='images/locate3d_one.jpg' width=100%>
+                  </div>
+                  <script type="text/javascript">
+                    function locate3d_start() {
+                      document.getElementById('locate3d_image').style.opacity = "1";
+                    }
 
+                    function locate3d_stop() {
+                      document.getElementById('locate3d_image').style.opacity = "0";
+                    }
+                    locate3d_stop()
+                  </script>
+                </td>
+                <td style="padding:8px;width:80%;vertical-align:middle">
+                  <a href="https://github.com/facebookresearch/locate-3d">
+                    <span class="papertitle">Locate 3D: Real-World Object Localization via Self-Supervised Learning in 3D</span>
+                  </a>
+                  <br>
+                  <a href="https://ai.meta.com/research/">The Cortex Team @ FAIR</a>
+                  <br>
+                  <em>arXiv</em>, 2025
+                  <br>
+                  <a href="https://locate3d.atmeta.com/">website</a> /
+                  <a href="https://locate3d.atmeta.com/demo">demo</a> /
+                  <a href="https://arxiv.org/pdf/2504.14151">paper</a> /
+                  <a href="https://github.com/facebookresearch/locate-3d">github</a> /
+                  <a href="https://huggingface.co/facebook/locate-3d">model</a>
+                  <p></p>
+                  <p>
+                    SotA model for localizing objects in 3D scenes from referring expressions. 
+                    The model works directly on sensor observation streams for real-world deployment on robots and AR devices.
+                    Includes 3D-JEPA (SSL for sensor point clouds), and introduces the Locate 3D Dataset with over 130K annotations.
+                  </p>
+                </td>
+              </tr>
                             
               <tr onmouseout="fast3r_stop()" onmouseover="fast3r_start()" bgcolor="#ffffd0">
                 <td style="padding:16px;width:20%;vertical-align:middle">
