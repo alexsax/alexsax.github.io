@@ -140,3 +140,51 @@ span.highlight {
     display: inline-block;
     border-radius: 10px;
 }
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  /* Override bgcolor attributes for highlighted entries in dark mode */
+  tr[bgcolor="#ffffd0"] {
+    /* Amber/Orange tones - Warm and inviting
+    rgba(251, 191, 36, 0.15) - Soft amber glow
+    rgba(245, 158, 11, 0.12) - Deeper amber
+    Blue tones - Professional and calm
+    rgba(59, 130, 246, 0.15) - Soft blue
+    rgba(96, 165, 250, 0.12) - Lighter blue
+    rgba(14, 165, 233, 0.15) - Sky blue
+    Teal/Cyan tones - Modern and fresh
+    rgba(20, 184, 166, 0.15) - Teal
+    rgba(34, 211, 238, 0.12) - Cyan
+    Green tones - Natural and calming
+    rgba(16, 185, 129, 0.15) - Emerald green
+    rgba(34, 197, 94, 0.12) - Lighter green
+    Rose/Pink tones - Soft and elegant
+    rgba(244, 63, 94, 0.15) - Rose
+    rgba(236, 72, 153, 0.12) - Pink
+    Indigo tones - Deep and sophisticated
+    rgba(99, 102, 241, 0.15) - Indigo
+    rgba(129, 140, 248, 0.12) - Lighter indigo
+    Yellow-gold tones - Closest to your light mode yellow
+    rgba(250, 204, 21, 0.15) - Gold
+    rgba(234, 179, 8, 0.12) - Deeper gold */
+    background-color: rgba(245, 158, 11, 0.12) !important;
+  }
+
+  tr[bgcolor="#ffffd0"] td:first-child {
+    border-left: 3px solid rgba(245, 158, 11, 0.5) !important;
+  }
+
+  tr[bgcolor="#ffffff"] {
+    background-color: transparent !important;
+  }
+
+  /* Update highlight span for dark mode */
+  span.highlight {
+    background-color: rgba(245, 158, 11, 0.12);
+  }
+
+  /* Make colored boxes work in dark mode */
+  .colored-box {
+    color: white;
+  }
+}

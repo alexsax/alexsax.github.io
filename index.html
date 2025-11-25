@@ -32,10 +32,9 @@
                   <p class="name" style="text-align: center;">
                     Alexander (Sasha) Sax
                   </p>
-                  <p>I'm a senior research scientist at <a href="https://ai.meta.com/research/">Meta FAIR</a> in Menlo Park.
-                    My research focuses on building <strong>multimodal foundation models</strong> to enable Embodied Agents that can 
-                    perceive, act in, and communicate about the <strong>physical world</strong>.
-
+                  <p>I'm a senior research scientist at <a href="https://ai.meta.com/research/">Meta Superintelligence Labs</a> in Menlo Park.
+                    I develop foundational <strong>multimodal models</strong> that enable autonomous AR and robotic systems to
+                    be intelligent in the <strong>physical world</strong>.
                   </p>
                   <p>
                     I did my PhD at <a href="http://www.eecs.berkeley.edu/">UC Berkeley</a>, where I was advised by <a
@@ -70,23 +69,9 @@
                 <td style="padding:16px;width:100%;vertical-align:middle">
                   <h2>Research</h2>
                   <p>
-                    <!-- My research focuses on building <strong>foundation models</strong> to enable Embodied Agents that 
-                    can perceive, act in, and communicate about the <strong>physical world</strong>.
-                    
-                    <br>
-                    <br> -->
-                    A lot of my work is around large-scale training for predictive and generative models using supervised learning and RL.
-                    It often involves developing multimodal 3D datasets, simulators, and techniques for efficient pretraining and finetuning.
-                    
-                    <!-- Some keywords are large-scale pretraining, transfer learning, RL, differentiable rendering, and sim-to-real. -->
-                    <!-- It  using techniques like model distillation, RL, sim-to-real, and differentia. -->
-                    <!-- Some relevant keywords are large-scale predictive models, transfer learning, RL, sim2real. -->
-<!-- 
-                    I'm interested in computer vision, deep learning, and embodied agents.
-                    Most of my research is about creating .
-                    research is about training predictive models to infer and understand the physical world, and 
-                    using predictive models to build capable embodied agents.
-                    Sometimes I use rendering and physics engines to generate the data. -->
+                    My recent work focuses on creating new model capabilities for understanding, grounding, and reconstructing the physical world.
+                    This work advances the full training and data generation loop, creating scalable techniques for pretraining and post-training multimodal models.
+                    <br><br>
                     Here are some nice honors:
                   </p>
                   <ul style="margin-top: 0px;">
@@ -114,46 +99,52 @@
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
 
-              <tr onmouseout="locate3d_stop()" onmouseover="locate3d_start()" bgcolor="#ffffd0">
+              <tr onmouseout="sam3d_stop()" onmouseover="sam3d_start()" bgcolor="#ffffd0">
                 <td style="padding:16px;width:20%;vertical-align:middle">
                   <div class="one" style="display: flex; align-items: center; height: 100%;">
-                    <div class="two" id='locate3d_image'><img src="images/locate3d_two.jpg" width=100%></div>
-                    <img src='images/locate3d_one.jpg' width=100%>
+                    <div class="two" id='sam3d_image'><video width=100% muted autoplay loop>
+                        <source src="images/sam3d_two.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <img src='images/sam3d_one.jpg' width=100%>
                   </div>
                   <script type="text/javascript">
-                    function locate3d_start() {
-                      document.getElementById('locate3d_image').style.opacity = "1";
+                    function sam3d_start() {
+                      document.getElementById('sam3d_image').style.opacity = "1";
                     }
 
-                    function locate3d_stop() {
-                      document.getElementById('locate3d_image').style.opacity = "0";
+                    function sam3d_stop() {
+                      document.getElementById('sam3d_image').style.opacity = "0";
                     }
-                    locate3d_stop()
+                    sam3d_stop()
                   </script>
                 </td>
                 <td style="padding:8px;width:80%;vertical-align:middle">
-                  <a href="https://github.com/facebookresearch/locate-3d">
-                    <span class="papertitle">Locate 3D: Real-World Object Localization via Self-Supervised Learning in 3D</span>
+                  <a href="https://github.com/facebookresearch/sam-3d-objects">
+                    <span class="papertitle">SAM 3D: 3Dfy Anything in Images</span>
                   </a>
                   <br>
-                  <a href="https://ai.meta.com/research/">The Cortex Team @ FAIR</a>
+                  <a href="https://ai.meta.com/research/">Meta Superintelligence Labs</a>
                   <br>
-                  <em>ICML</em>, 2025 &nbsp <font color="red"><strong>(Spotlight)</strong></font>
+                  <em>arXiv</em>, 2025
                   <br>
-                  <a href="https://locate3d.atmeta.com/">website</a> /
-                  <a href="https://locate3d.atmeta.com/demo">demo</a> /
-                  <a href="https://arxiv.org/pdf/2504.14151">paper</a> /
-                  <a href="https://github.com/facebookresearch/locate-3d">github</a> /
-                  <a href="https://huggingface.co/facebook/locate-3d">model</a>
+                  <a href="https://ai.meta.com/sam3d/">project page</a> /
+                  <a href="https://aidemos.meta.com/segment-anything/editor/convert-image-to-3d">demo</a> /
+                  <a href="https://arxiv.org/abs/2511.16624">paper</a> /
+                  <a href="https://github.com/facebookresearch/sam-3d-objects">github</a>
                   <p></p>
                   <p>
-                    SotA model for localizing objects in 3D scenes from referring expressions. 
-                    The model works directly on sensor observation streams for real-world deployment on robots and AR devices.
-                    Includes 3D-JEPA (SSL for sensor point clouds), and introduces the Locate 3D Dataset with over 130K annotations.
+                    A foundation model for reconstructing objects' shape, pose, and texture from a single image.
+                    We cracked the 3D data bottleneck by having humans rank model generations.
+                    <!-- Pretraining on synthetic data, then using human feedback for sim-to-real transfer and preference alignment. -->
+                    After pretraining on synthetic data, we use human feedback for sim-to-real transfer and preference alignment.
+
+                    <!-- And we demonstrate this to train a foundational model for visually grounded 3D object reconstruction. <br> -->
                   </p>
                 </td>
               </tr>
-                            
+
               <tr onmouseout="fast3r_stop()" onmouseover="fast3r_start()" bgcolor="#ffffd0">
                 <td style="padding:16px;width:20%;vertical-align:middle">
                   <div class="one" style="display: flex; align-items: center; height: 100%;">
@@ -193,17 +184,17 @@
                   <em>CVPR</em>, 2025
                   <br>
                   <a href="https://fast3r-3d.github.io/">project page</a> /
-                  <a href="https://arxiv.org/abs/2501.13928">arXiv</a> /
-                  <a href="https://github.com/facebookresearch/fast3r">github</a> /
-                  <a href="https://fast3r.ngrok.app/">demo</a>
+                  <a href="https://fast3r.ngrok.app/">demo</a> /
+                  <a href="https://arxiv.org/abs/2501.13928">paper</a> /
+                  <a href="https://github.com/facebookresearch/fast3r">github</a>
                   <p></p>
                   <p>
-                    Replacing the entire structure-from-motion pipeline with a transformer. A purely learning-based approach for 3D reconstruction that scales well with more data and model parameters.
+                    Replace the entire structure-from-motion pipeline with a single transformer. 
+                    A purely learning-based approach for 3D reconstruction that scales with more data and compute.
                   </p>
                 </td>
               </tr>
 
-              
               <tr onmouseout="liftgs_stop()" onmouseover="liftgs_start()" bgcolor="#ffffff">
                 <td style="padding:16px;width:20%;vertical-align:middle">
                   <div class="one" style="display: flex; align-items: center; height: 100%;">
@@ -227,7 +218,7 @@
                 </td>
                 <td style="padding:8px;width:80%;vertical-align:middle">
                   <a href="https://liftgs.github.io/">
-                    <span class="papertitle">LIFT-GS: Cross-Scene Render-Supervised Distillation for 3D Language Grounding</span>
+                    <span class="papertitle">From Thousands to Billions: 3D Visual Language Grounding via Render-Supervised Distillation from 2D VLMs</span>
                   </a>
                   <br>
                   <a href="https://www.linkedin.com/in/ang-cao/">Ang Cao</a>,
@@ -253,7 +244,48 @@
                   <!-- <a href="https://github.com/facebookresearch/liftgs">github (coming soon)</a> -->
                   <p></p>
                   <p>
-                    Image-based supervision and differentiable rendering (alone) can train 3D vision-language grounding models. This allows us to distill 3D grounding models from a 2D model.
+                    Use differentiable rendering to supervise 3D masks.
+
+                    We distill from 2D VLMs (think: <a href="https://ai.meta.com/sam3/">SAM 3</a> or <a href="https://ai.google.dev/gemini-api/docs/image-understanding#capabilities">Gemini 3</a>), then finetune on ~50k samples for 3D vision-language grounding. Achieves SOTA performance with strong empirical data scaling.
+                  </p>
+                </td>
+              </tr>
+
+              <tr onmouseout="locate3d_stop()" onmouseover="locate3d_start()" bgcolor="#ffffd0">
+                <td style="padding:16px;width:20%;vertical-align:middle">
+                  <div class="one" style="display: flex; align-items: center; height: 100%;">
+                    <div class="two" id='locate3d_image'><img src="images/locate3d_two.jpg" width=100%></div>
+                    <img src='images/locate3d_one.jpg' width=100%>
+                  </div>
+                  <script type="text/javascript">
+                    function locate3d_start() {
+                      document.getElementById('locate3d_image').style.opacity = "1";
+                    }
+
+                    function locate3d_stop() {
+                      document.getElementById('locate3d_image').style.opacity = "0";
+                    }
+                    locate3d_stop()
+                  </script>
+                </td>
+                <td style="padding:8px;width:80%;vertical-align:middle">
+                  <a href="https://github.com/facebookresearch/locate-3d">
+                    <span class="papertitle">Locate 3D: Real-World Object Localization via Self-Supervised Learning in 3D</span>
+                  </a>
+                  <br>
+                  <a href="https://ai.meta.com/research/">The Cortex Team @ FAIR</a>
+                  <br>
+                  <em>ICML</em>, 2025 &nbsp <font color="red"><strong>(Spotlight)</strong></font>
+                  <br>
+                  <a href="https://locate3d.atmeta.com/">website</a> /
+                  <a href="https://locate3d.atmeta.com/demo">demo</a> /
+                  <a href="https://arxiv.org/pdf/2504.14151">paper</a> /
+                  <a href="https://github.com/facebookresearch/locate-3d">github</a> /
+                  <a href="https://huggingface.co/facebook/locate-3d">model</a>
+                  <p></p>
+                  <p>
+                    Use natural langauge to localize objects in 3D scenes.
+                    Combines a post-training data engine for 3D language grounding with 3D-JEPA pretraining.
                   </p>
                 </td>
               </tr>
@@ -297,7 +329,7 @@
                   <a href="https://github.com/facebookresearch/univlg">github</a>
                   <p></p>
                   <p>
-                    A unified architecture for 2D and 3D vision-language understanding that achieves SotA performance in 3D vision-language tasks. It uses 2D pre-training for the encoder and introduces a SAM-like mask decoder that is language-conditioned and shared across modalities.
+                    A unified architecture for joint 2D and 3D vision-language understanding that achieves SotA performance in 3D language grounding benchmarks.
                   </p>
                 </td>
               </tr>
@@ -363,9 +395,8 @@
                   <a href="https://github.com/facebookresearch/open-eqa">github</a>
                   <p></p>
                   <p>
-                    An open-vocabulary benchmark for Embodied Question Answering (EQA) with a new dataset across 180+ real environments.
-                    GPT-4V at 48.5% lags behind human performance (85.9%).
-                    For questions that require complex spatial understanding, VLMs in December 2024 are nearly "blind". 
+                    An open-vocabulary benchmark for Embodied Question Answering across 180+ real-world scenes.
+                    Humans far outperform VLMs on tasks that require complex spatial understanding.
                   </p>
                 </td>
               </tr>
@@ -411,9 +442,9 @@
                   <a href="https://github.com/EPFL-VILAB/omnidata">github</a>
                   <p></p>
                   <p>
-                    Annotating a large-scale dataset of 3D scanned and artist-generated scenes, using Blender.
-                    Transformer models trained for monocular surface normal estimation achieved performance comparable to human annotators on the OASIS benchmark, and 
-                    depth models outperformed MidasV2.
+                    A multimodal 2D/3D dataset of millions of frames from thousands of scanned and synthetic scenes.
+                    For surface normal estimation, ViTs achieve human-level performance on OASIS. 
+                    SOTA depth and the annotation engine is released as OSS.
                   </p>
                 </td>
               </tr>
@@ -452,8 +483,7 @@
                   <a href="https://github.com/EPFL-VILAB/XDEnsembles">github</a>
                   <p></p>
                   <p>
-                    A method for creating a robust and diverse ensemble of predictive networks where the average pairwise disagreement provides a measure of uncertainty.
-                    The calibration can be supervised with a lightweight post-training step.
+                    Joint uncertainty estimation for perception tasks. Calibration is supervised with a lightweight post-training step.
                   </p>
                 </td>
               </tr>
@@ -500,8 +530,8 @@
                   <a href="https://arxiv.org/abs/2006.04096">arXiv</a> /
                   <a href="https://github.com/EPFL-VILAB/XTConsistency">github</a>
                   <p>
-                    Introducing perceptual consistency losses for large-scale distillation; using learned priors from pretrained networks.
-                    We find that monocular priors from depth and surface normal estimation yield sharper details and better generalization than LPIPS.
+                    Large-scale analysis of pretrained image-to-image networks.
+                    Compared to purely semantic perceptual losses like LPIPS, geometric perceptual consistency losses (depth/surface normal) yield sharper details and improve generalization to new domains.
                   </p>
                 </td>
               </tr>
@@ -538,20 +568,18 @@
                   <a href="https://geometry.stanford.edu/member/guibas/">Leonidas Guibas</a>,
                   <a href="https://people.eecs.berkeley.edu/~malik/">Jitendra Malik</a>
                   <br>
-                  <em>ECCV</em>, 2020
+                  <em>ECCV</em>, 2020 &nbsp <font color="red"><strong>(Spotlight)</strong></font>
                   <br>
                   <a href="https://sidetuning.berkeley.edu/">project page</a> /
                   <a href="https://arxiv.org/abs/1912.13503">arXiv</a> /
                   <a href="https://github.com/jozhang97/side-tuning">github</a>
                   <p></p>
                   <p>
-                    Adding a lightweight side network to modulate a large pretrained network 
-                    is surprisingly competitive for network adaptation and lifelong learning. 
-                    We show results in vision, language, and robotics using supervised learning and behavior cloning.
+                    Compared to full fine-tuning, and other parameter-efficient fine-tuning methods, simply adding a lightweight side network to control the activations is surprisingly competitive.
+                    We show results across vision, language, and robotics using both supervised learning and behavior cloning.
                   </p>
-                </td>
+                </td>  
               </tr>
-
 
               <tr onmouseout="midlevel_manipulation_stop()" onmouseover="midlevel_manipulation_start()">
                 <td style="padding:16px;width:20%;vertical-align:middle">
@@ -592,8 +620,8 @@
                   <a href="https://github.com/alexsax/robust-policies-via-midlevel-vision">github</a>
                   <p></p>
                   <p>
+                    Compared to domain randomization, pretrained image representations yield qualitatively better generalization to new environments, including sim-to-real transfer.
                     In data regimes where visual domain randomization gets near-zero training performance, policies using pretrained image representations can saturate the benchmark.
-                    Pretrained representations yield qualitatively better generalization to new environments, including sim-to-real transfer.
                   </p>
                 </td>
               </tr>
@@ -641,7 +669,7 @@
                   <a href="https://github.com/alexsax/midlevel-reps">github</a>
                   <p></p>
                   <p>
-                    Training end-to-end policies with pretrained image representations requires 10x less data to achieve a given performance vs. RL from raw pixels.
+                    RL agents with pretrained image representations require 10x less data to achieve a given performance vs. starting from a random initialization.
                     <!-- Features with stronger geometric and segmentation supervision outperformed imagenet features and autoencoders. -->
                   </p>
                 </td>
@@ -689,8 +717,8 @@
                   <a href="https://github.com/StanfordVL/taskonomy">github</a>
                   <p></p>
                   <p>
-                    A fully computational approach for modeling the structure across 26 fundamental vision tasks. 
-                    Exploiting this structure with a transfer learning curriculum reduces overall supervision by ~2/3.
+                    A fully computational approach for modeling relationships across 26 fundamental vision tasks. 
+                    Exploiting this structure with a transfer learning curriculum reduces overall supervision required by ~2/3.
                   </p>
                 </td>
               </tr>
@@ -735,7 +763,7 @@
                   <p></p>
                   <p>
                     A rendering and physics simulator to bridge the gap between large-scale simulation and real-world environments.
-                    The simulator features a database of thousands of real spaces and uses a neural network for infilling, like an early form of <a href="https://en.wikipedia.org/wiki/Deep_learning_super_sampling">DLSS</a>.
+                    The simulator features a database of thousands of real spaces and uses a generative model (GAN) for super-sampling.
                   </p>
                 </td>
               </tr>
@@ -776,7 +804,7 @@
                   <p></p>
                   <p>
                     A large-scale indoor dataset providing mutually registered 2D, 2.5D and 3D modalities with instance-level semantic annotations. 
-                    Covers over 6,000m² across 6 large-scale indoor areas with 70,000+ RGB images and corresponding depths, surface normals, semantic annotations, and global XYZ coordinates.
+                    Covers over 6,000m² across 6 large-scale indoor areas with 70,000+ RGB images and corresponding poses, depths, surface normals, semantic annotations, and pointmaps.
                   </p>
                 </td>
               </tr>
@@ -875,8 +903,8 @@
                   <a href="https://eecs189.org/">Graduate Student Instructor,
                     Berkeley CS 189/289A 2020 (Machine Learning)</a>
                   <br>
-                  <a href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html">Head TA,
-                    Stanford CS331B (Representation Learning) Fall 2018</a>
+                  <a href="https://web.stanford.edu/class/cs331b/2017/index.html">Course TA,
+                    Stanford CS331B (Representation Learning) Fall 2017</a>
                   <br>
                   <a href="https://web.stanford.edu/class/cs103/">Teaching Assistant, 
                     Stanford CS103 (Mathematical Foundations of Computing) 2015</a>
@@ -897,7 +925,7 @@
                   <p style="text-align:right;font-size:small;">
                     Thanks <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a> for the clean website.
                     <br>
-                    Last updated December 2024.
+                    Last updated November 2025.
                   </p>
                 </td>
               </tr>
