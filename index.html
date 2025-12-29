@@ -37,7 +37,7 @@
                     <!-- Frontier models increasingly master natural language, images, video generation, and coding, but lack <strong>long-horizon spatial understanding</strong>.  -->
                     My research is about building <strong>superintelligence for the physical world</strong>. An intelligence that cannot perceive, predict, and act in the physical world is not general, but the path is becoming clear.
                     <!-- Language models showed that scale works, and world models will need the same—pretraining on images and video, then post-training with signal that doesn't yet exist. -->
-                    Language models showed that scale works—pretraining, then post-training with human feedback and verifiable rewards. The physical world will need a similar recipe, adapted for new data bottlenecks.
+                    Language models showed that scale works—pretraining, then post-training with verifiable rewards and human feedback. The physical world will need a similar recipe, adapted for new data bottlenecks.
                     <br><br> 
                     I've worked on the problem end-to-end. In my PhD, I focused on pretraining for multimodal models and agents. More recently, I've built the post-training side: synthetic data engines, training recipes using preferences and rewards, multi-stage training that generalizes. I aim to build robust world models that ladder up into generalist agents.
                   </p>
@@ -142,9 +142,7 @@
                   <a href="https://github.com/facebookresearch/sam-3d-objects">github</a>
                   <p></p>
                   <p>
-                    Introduces real-world <i>3D visual grounding</i> from a single frame + mask.
-                    We broke the 3D data wall by applying the LLM recipe to 3D, yielding 5:1 preference over SOTA. A data generation loop w/ human ranking provides real-world post-training data for SFT and preference alignment, and we use internet-scale synthetic data for pretraining and mid-training.
-
+                    A 1.8B flow matching model (6T tokens). Predicts shape, pose, and texture for masked objects from a single image. Broke the 3D data wall by applying the LLM recipe: synthetic <i>pretraining + mid-training</i>, then a <i>human-in-the-loop data engine for SFT and DPO</i>. 5:1 win rate over SOTA.
                     <!-- We cracked the 3D data bottleneck by having humans rank model generations. -->
                     <!-- Pretraining on synthetic data, then using human feedback for sim-to-real transfer and preference alignment. -->
                     <!-- After pretraining on synthetic data, we use human feedback for sim-to-real transfer and preference alignment. -->
