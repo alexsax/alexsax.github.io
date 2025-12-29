@@ -142,7 +142,7 @@
                   <a href="https://github.com/facebookresearch/sam-3d-objects">github</a>
                   <p></p>
                   <p>
-                    A 1.8B flow matching model (6T tokens). Predicts shape, pose, and texture for masked objects from a single image. Broke the 3D data wall by applying the LLM recipe: synthetic <i>pretraining + mid-training</i>, then a <i>human-in-the-loop data engine for SFT and DPO</i>. 5:1 win rate over SOTA.
+                    A 1.8B flow matching model (6T tokens). Predicts shape, pose, and texture for masked objects from a single image. Broke the 3D data wall by applying the LLM recipe: synthetic <i>pretraining + mid-training</i>, then a <i>model-in-the-loop data engine with human rewards</i> for <i>SFT and DPO</i>. 5:1 win rate over SOTA.
                     <!-- We cracked the 3D data bottleneck by having humans rank model generations. -->
                     <!-- Pretraining on synthetic data, then using human feedback for sim-to-real transfer and preference alignment. -->
                     <!-- After pretraining on synthetic data, we use human feedback for sim-to-real transfer and preference alignment. -->
@@ -629,8 +629,10 @@
                   <a href="https://github.com/alexsax/robust-policies-via-midlevel-vision">github</a>
                   <p></p>
                   <p>
-                    Compared to domain randomization, pretrained image representations yield qualitatively better generalization to new environments, including sim-to-real transfer.
-                    In data regimes where visual domain randomization gets near-zero training performance, policies using pretrained image representations can saturate the benchmark.
+                    <!-- Compared to domain randomization, pretrained image representations yield qualitatively better generalization to new environments, including sim-to-real transfer.
+                    In data regimes where visual domain randomization gets near-zero training performance, policies using pretrained image representations can saturate the benchmark. -->
+                  Pretrained visual representations enable faster learning and qualitatively better generalization compared to domain randomization, saturating the benchmark in settings where domain randomization fails entirely. Includes zero-shot sim-to-real on physical robots. We train policies with SAC and TD3 using hindsight experience replay (HER) for sample efficiency.
+
                   </p>
                 </td>
               </tr>
@@ -678,7 +680,8 @@
                   <a href="https://github.com/alexsax/midlevel-reps">github</a>
                   <p></p>
                   <p>
-                    RL agents with pretrained image representations require 10x less data to achieve a given performance vs. starting from a random initialization.
+                    <!-- RL agents with pretrained image representations require 10x less data to achieve a given performance vs. starting from a random initialization. -->
+                    RL agents with pretrained image representations enable 10x sample efficiency gains vs. random init. We train navigation policies with PPO, adding importance sampling to enable off-policy learning with a replay buffer. 
                     <!-- Features with stronger geometric and segmentation supervision outperformed imagenet features and autoencoders. -->
                   </p>
                 </td>
