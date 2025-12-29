@@ -134,6 +134,10 @@ span.highlight {
   background-color: #ffffd0;
 }
 
+span.light-paren {
+  color: #888;
+}
+
 .colored-box {
     color: black;
     padding: 20px;
@@ -181,6 +185,11 @@ span.highlight {
   /* Update highlight span for dark mode */
   span.highlight {
     background-color: rgba(245, 158, 11, 0.12);
+  }
+
+  /* Lighter color for parenthetical content in dark mode */
+  span.light-paren {
+    color: #999;
   }
 
   /* Make colored boxes work in dark mode */

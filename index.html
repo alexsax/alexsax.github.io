@@ -142,7 +142,11 @@
                   <a href="https://github.com/facebookresearch/sam-3d-objects">github</a>
                   <p></p>
                   <p>
-                    A 1.8B flow matching model (6T tokens). Predicts shape, pose, and texture for masked objects from a single image. Broke the 3D data wall by applying the LLM recipe: synthetic <i>pretraining + mid-training</i>, then a <i>model-in-the-loop data engine with human rewards</i> for <i>SFT and DPO</i>. 5:1 win rate over SOTA.
+                    <!-- A 1.8B flow matching model (6T training tokens) for single-image 3D reconstruction. Proposed LLM training paradigm (pretraining→midtraining→SFT→DPO) and online preference integration into data engine. Advised on DPO implementation and . Designed and built layout model end-to-end (flow matching for pose, multimodal conditioning, training recipe, evaluation). -->
+
+                    A 1.8B flow matching model <span class="light-paren">(6T training tokens)</span> for single-image 3D reconstruction. Proposed LLM training paradigm <span class="light-paren">(pretraining→midtraining→SFT→DPO)</span> and preference-based data engine <span class="light-paren">(online DPO → reward models → rejection sampling)</span>. Designed and built layout model end-to-end <span class="light-paren">(flow matching for pose, multimodal conditioning)</span>. 5:1 win rate over SOTA.
+
+                    <!-- A 1.8B flow matching model (6T tokens). Predicts shape, pose, and texture for masked objects from a single image. Broke the 3D data wall by applying the LLM recipe: synthetic <i>pretraining + mid-training</i>, then a <i>model-in-the-loop data engine with human rewards</i> for <i>SFT and DPO</i>. 5:1 win rate over SOTA. -->
                     <!-- We cracked the 3D data bottleneck by having humans rank model generations. -->
                     <!-- Pretraining on synthetic data, then using human feedback for sim-to-real transfer and preference alignment. -->
                     <!-- After pretraining on synthetic data, we use human feedback for sim-to-real transfer and preference alignment. -->
@@ -196,7 +200,7 @@
                   <a href="https://github.com/facebookresearch/fast3r">github</a>
                   <p></p>
                   <p>
-                    Bitter lesson for SFM: replace the entire structure-from-motion pipeline with a single transformer. 
+                    Bitter lesson for SfM: replace the entire structure-from-motion pipeline with a single transformer.
                     <!-- A purely learning-based approach for 3D reconstruction that scales with more data and compute. -->
                   </p>
                 </td>
@@ -251,7 +255,9 @@
                   <!-- <a href="https://github.com/facebookresearch/liftgs">github (coming soon)</a> -->
                   <p></p>
                   <p>
-                    Scalable 3D distillation directly from VLMs. We pretrain the model by pseudolabeling images and supervise via a rendering loss on the predicted masks. Emprically we find results predicted by scaling laws for transfer, and show SOTA 3D language grounding. 
+                    3D vision-language grounding via distillation from 2D VLMs. Scaling behavior matches transfer learning predictions, achieving SOTA. Proposed render-supervised distillation approach; advised on design + implementation.
+
+                    <!-- Scalable 3D distillation directly from VLMs. We pretrain the model by pseudolabeling images and supervise via a rendering loss on the predicted masks. Emprically we find results predicted by scaling laws for transfer, and show SOTA 3D language grounding.  -->
 
                     <!-- We distill from 2D VLMs (think: <a href="https://ai.meta.com/sam3/">SAM 3</a> or <a href="https://ai.google.dev/gemini-api/docs/image-understanding#capabilities">Gemini 3</a>), then finetune on ~50k samples for 3D vision-language grounding.  -->
                   </p>
@@ -293,7 +299,8 @@
                   <a href="https://huggingface.co/facebook/locate-3d">model</a>
                   <p></p>
                   <p>
-                    Localize objects in 3D scenes using natural language. We pretrain using 3D-JEPA and develop a post-training data engine that bootstraps from 2D labels.
+                    Language-based 3D localization in real-world scenes. Introduced problem framing; championed pre/post-training approach and proposed 2D annotation for data engine. Designed and built evaluations; led mask decoder development; drove dataset curation at 20-40x scale.
+                    <!-- Localize objects in 3D scenes using natural language. We pretrain using 3D-JEPA and develop a post-training data engine that bootstraps from 2D labels. -->
                   </p>
                 </td>
               </tr>
