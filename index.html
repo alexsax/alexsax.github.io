@@ -34,12 +34,20 @@
                   </p>
                   <p>I am a senior research scientist at <a href="https://ai.meta.com/research/">Meta Superintelligence Labs</a>.
                     <br><br>
+                    My research is about building <strong>generalist intelligence for the physical world</strong>. An intelligence that cannot perceive, predict, and act in the physical world is not truly general.
+                    <br><br>
+                    Language models scaled on internet text, and internet <i>video</i> is the equivalent corpus for physical-world AI. In my view, the missing piece is post-training—learning from interleaved synthetic data, human preferences, and sparse rewards to close the gap between passive video and active agents.
+                    <br><br>
+                    I've worked on this problem end-to-end: transfer learning and pretrained representations for RL in my PhD, then synthetic data engines and preference-based post-training for 3D at Meta. I aim to build world models that generalize into capable agents.
+
+ 
+
                     <!-- Frontier models increasingly master natural language, images, video generation, and coding, but lack <strong>long-horizon spatial understanding</strong>.  -->
-                    My research is about building <strong>superintelligence for the physical world</strong>. An intelligence that cannot perceive, predict, and act in the physical world is not general, but the path is becoming clear.
+                    <!-- My research is about building <strong>generalist intelligence for the physical world</strong>. An intelligence that cannot perceive, predict, and act in the physical world is not general. -->
                     <!-- Language models showed that scale works, and world models will need the same—pretraining on images and video, then post-training with signal that doesn't yet exist. -->
-                    Language models showed that scale works—pretraining, then post-training with verifiable rewards and human feedback. The physical world will need a similar recipe, adapted for new data bottlenecks.
-                    <br><br> 
-                    I've worked on the problem end-to-end. In my PhD, I focused on pretraining for multimodal models and agents. More recently, I've built the post-training side: synthetic data engines, training recipes using preferences and rewards, multi-stage training that generalizes. I aim to build robust world models that ladder up into generalist agents.
+                    <!-- The path is becoming clear since language models showed that scale works: pretraining followed by post-training with verifiable rewards and human feedback. The physical world will need a similar recipe, adapted for new data bottlenecks in post-training data. -->
+                    <!-- <br><br>  -->
+                    <!-- I've worked on the problem end-to-end. In my PhD, I focused on multimodal transfer learning and pretraining for RL agents. More recently, I've built synthetic data engines and post-training recipes for 3D using rewards and human preferences. I aim to build robust world models that ladder up into generalist agents. -->
                   </p>
                   <p>
                     During my PhD, at <a href="http://www.eecs.berkeley.edu/">UC Berkeley</a>, I was advised by <a
@@ -144,7 +152,7 @@
                   <p>
                     <!-- A 1.8B flow matching model (6T training tokens) for single-image 3D reconstruction. Proposed LLM training paradigm (pretraining→midtraining→SFT→DPO) and online preference integration into data engine. Advised on DPO implementation and . Designed and built layout model end-to-end (flow matching for pose, multimodal conditioning, training recipe, evaluation). -->
 
-                    A 1.8B flow matching model <span class="light-paren">(6T training tokens)</span> for single-image 3D reconstruction. Proposed LLM training paradigm <span class="light-paren">(pretraining→midtraining→SFT→DPO)</span> and preference-based data engine <span class="light-paren">(online DPO → reward models → rejection sampling)</span>. Designed and built layout model end-to-end <span class="light-paren">(flow matching for pose, multimodal conditioning)</span>. 5:1 win rate over SOTA.
+                    A 1.8B flow matching model <span class="light-paren">(6T training tokens)</span> for single-image 3D reconstruction. Drove adoption of LLM training paradigm <span class="light-paren">(pretraining→midtraining→SFT→DPO)</span> and preference-based data engine <span class="light-paren">(online DPO → reward models → rejection sampling)</span>. Designed and built layout model end-to-end <span class="light-paren">(flow matching for pose, multimodal conditioning)</span>. 5:1 win rate over SOTA.
 
                     <!-- A 1.8B flow matching model (6T tokens). Predicts shape, pose, and texture for masked objects from a single image. Broke the 3D data wall by applying the LLM recipe: synthetic <i>pretraining + mid-training</i>, then a <i>model-in-the-loop data engine with human rewards</i> for <i>SFT and DPO</i>. 5:1 win rate over SOTA. -->
                     <!-- We cracked the 3D data bottleneck by having humans rank model generations. -->
@@ -255,7 +263,7 @@
                   <!-- <a href="https://github.com/facebookresearch/liftgs">github (coming soon)</a> -->
                   <p></p>
                   <p>
-                    3D vision-language grounding via distillation from 2D VLMs. Scaling behavior matches transfer learning predictions, achieving SOTA. Proposed render-supervised distillation approach; advised on design + implementation.
+                    3D vision-language grounding via distillation from 2D VLMs. Scaling behavior matches transfer learning predictions, achieving SOTA. Proposed render-supervised distillation approach; co-developed on design + implementation.
 
                     <!-- Scalable 3D distillation directly from VLMs. We pretrain the model by pseudolabeling images and supervise via a rendering loss on the predicted masks. Emprically we find results predicted by scaling laws for transfer, and show SOTA 3D language grounding.  -->
 
@@ -264,7 +272,7 @@
                 </td>
               </tr>
 
-              <tr onmouseout="locate3d_stop()" onmouseover="locate3d_start()" bgcolor="#ffffff">
+              <tr onmouseout="locate3d_stop()" onmouseover="locate3d_start()" bgcolor="#ffffd0">
                 <td style="padding:16px;width:20%;vertical-align:middle">
                   <div class="one" style="display: flex; align-items: center; height: 100%;">
                     <div class="two" id='locate3d_image'><img src="images/locate3d_two.jpg" width=100%></div>
@@ -299,7 +307,7 @@
                   <a href="https://huggingface.co/facebook/locate-3d">model</a>
                   <p></p>
                   <p>
-                    Language-based 3D localization in real-world scenes. Introduced problem framing; championed pre/post-training approach and proposed 2D annotation for data engine. Designed and built evaluations; led mask decoder development; drove dataset curation at 20-40x scale.
+                    Language-based 3D localization in real-world scenes. Introduced problem framing; championed pre/post-training approach and proposed 2D annotation for data engine. Designed and built evaluations; led mask decoder development; drove dataset curation at 20-40x typical scale.
                     <!-- Localize objects in 3D scenes using natural language. We pretrain using 3D-JEPA and develop a post-training data engine that bootstraps from 2D labels. -->
                   </p>
                 </td>
@@ -351,7 +359,7 @@
               </tr>
 
 
-              <tr onmouseout="openeqa_stop()" onmouseover="openeqa_start()" bgcolor="#ffffd0">
+              <tr onmouseout="openeqa_stop()" onmouseover="openeqa_start()" bgcolor="#ffffff">
                 <td style="padding:16px;width:20%;vertical-align:middle">
                   <div class="one" style="display: flex; align-items: center; height: 100%;">
                     <div class="two" id='openeqa_image'><video width=100% muted autoplay loop>
