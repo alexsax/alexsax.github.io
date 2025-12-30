@@ -36,9 +36,9 @@
                     <br><br>
                     My research is about building <strong>generalist intelligence for the physical world</strong>. An intelligence that cannot perceive, predict, and act in the physical world is not truly general.
                     <br><br>
-                    Language models scaled on internet text, and internet <i>video</i> is the equivalent corpus for physical-world AI. In my view, the missing piece is post-training—learning from interleaved synthetic data, human preferences, and sparse rewards to close the gap between passive video and active agents.
+                    Language models scaled on internet text, and internet <i>video</i> is the equivalent corpus for physical-world AI. In my view, the missing piece is post-training—learning from interleaved synthetic data, human preferences, and sparse rewards to close the gap between passive video pretraining and active agents.
                     <br><br>
-                    I've worked on this problem end-to-end: transfer learning and pretrained representations for RL in my PhD, then synthetic data engines and preference-based post-training for 3D at Meta. I aim to build world models that generalize into capable agents.
+                    I've worked on this problem end-to-end: transfer learning and pretrained representations for RL in my PhD, then synthetic data engines and preference-based post-training for 3D at Meta. 3D is a domain where data scarcity demands post-training techniques that will generalize beyond it. Ultimately, I aim to build world models that support capable agents.
 
  
 
@@ -152,7 +152,7 @@
                   <p>
                     <!-- A 1.8B flow matching model (6T training tokens) for single-image 3D reconstruction. Proposed LLM training paradigm (pretraining→midtraining→SFT→DPO) and online preference integration into data engine. Advised on DPO implementation and . Designed and built layout model end-to-end (flow matching for pose, multimodal conditioning, training recipe, evaluation). -->
 
-                    A 1.8B flow matching model <span class="light-paren">(6T training tokens)</span> for single-image 3D reconstruction. Drove adoption of LLM training paradigm <span class="light-paren">(pretraining→midtraining→SFT→DPO)</span> and preference-based data engine <span class="light-paren">(online DPO → reward models → rejection sampling)</span>. Designed and built layout model end-to-end <span class="light-paren">(flow matching for pose, multimodal conditioning)</span>. 5:1 win rate over SOTA.
+                    A 1.8B flow matching model <span class="light-paren">(6T training tokens)</span> for single-image 3D generation, that predicts complete shape, pose, and texture for masked objects. Drove adoption of LLM training paradigm <span class="light-paren">(pretraining→midtraining→SFT→DPO)</span> and preference-based data engine <span class="light-paren">(online DPO → reward models → rejection sampling)</span>. Designed and built layout model end-to-end <span class="light-paren">(flow matching for pose, multimodal conditioning)</span>. 5:1 win rate over SOTA.
 
                     <!-- A 1.8B flow matching model (6T tokens). Predicts shape, pose, and texture for masked objects from a single image. Broke the 3D data wall by applying the LLM recipe: synthetic <i>pretraining + mid-training</i>, then a <i>model-in-the-loop data engine with human rewards</i> for <i>SFT and DPO</i>. 5:1 win rate over SOTA. -->
                     <!-- We cracked the 3D data bottleneck by having humans rank model generations. -->
