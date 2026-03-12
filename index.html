@@ -20,12 +20,24 @@
   <meta property="profile:first_name" content="Alexander" />
   <meta property="profile:last_name" content="Sax" />
 
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@iamsashasax" />
+  <meta name="twitter:creator" content="@iamsashasax" />
+  <meta name="twitter:title" content="Alexander (Sasha) Sax" />
+  <meta name="twitter:description" content="Research scientist at Meta Superintelligence Labs, building generalist physical intelligence. CVPR 2018 Best Paper. PhD UC Berkeley." />
+  <meta name="twitter:image" content="https://alexsax.github.io/images/headshot2x.png" />
+
   <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "@id": "https://alexsax.github.io/#person",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://alexsax.github.io/"
+    },
     "name": "Alexander Sax",
     "alternateName": ["Sasha Sax", "Alex Sax", "Alexander (Sasha) Sax"],
     "givenName": "Alexander",
@@ -39,6 +51,21 @@
       "@type": "Organization",
       "name": "Meta",
       "sameAs": "https://ai.meta.com/research/"
+    },
+    "hasOccupation": {
+      "@type": "Occupation",
+      "name": "Research Scientist",
+      "occupationalCategory": "15-2051.00",
+      "description": "AI and computer vision researcher"
+    },
+    "hasCredential": {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "PhD",
+      "recognizedBy": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of California, Berkeley",
+        "sameAs": "https://en.wikipedia.org/wiki/University_of_California,_Berkeley"
+      }
     },
     "knowsAbout": [
       "Computer Vision",
@@ -60,7 +87,10 @@
         "sameAs": "https://en.wikipedia.org/wiki/Stanford_University"
       }
     ],
-    "award": "CVPR 2018 Best Paper Award (Taskonomy)",
+    "award": [
+      "CVPR 2018 Best Paper Award (Taskonomy)",
+      "CVPR 2020 Best Paper Nominee (Cross-Task Consistency)"
+    ],
     "sameAs": [
       "https://scholar.google.com/citations?user=PIq7jcUAAAAJ",
       "https://www.linkedin.com/in/sashasax/",
@@ -68,13 +98,73 @@
       "https://x.com/iamsashasax",
       "https://www.semanticscholar.org/author/Alexander-Sax/46389228",
       "https://dblp.org/pid/218/6484.html",
+      "https://dblp.org/pid/195/5696.html",
       "https://openreview.net/profile?id=~Alexander_Sax1",
       "https://www.researchgate.net/profile/Alexander-Sax",
       "https://sashasax.github.io/",
       "https://www.wikidata.org/wiki/Q138636880",
-      "https://orcid.org/0009-0009-1613-076X"
+      "https://orcid.org/0009-0009-1613-076X",
+      "https://www.facebook.com/alexander.sax.54/",
+      "https://www.imdb.com/name/nm11910276/"
     ]
   }
+  </script>
+
+  <!-- Notable Publications (strengthens entity-to-work connections) -->
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "ScholarlyArticle",
+      "name": "Taskonomy: Disentangling Task Transfer Learning",
+      "author": [
+        {"@type": "Person", "@id": "https://alexsax.github.io/#person"},
+        {"@type": "Person", "name": "Amir R. Zamir"},
+        {"@type": "Person", "name": "William B. Shen"},
+        {"@type": "Person", "name": "Leonidas J. Guibas"},
+        {"@type": "Person", "name": "Jitendra Malik"},
+        {"@type": "Person", "name": "Silvio Savarese"}
+      ],
+      "datePublished": "2018",
+      "isPartOf": {
+        "@type": "Event",
+        "name": "CVPR 2018"
+      },
+      "award": "Best Paper Award",
+      "url": "https://arxiv.org/abs/1804.08328",
+      "sameAs": "https://openaccess.thecvf.com/content_cvpr_2018/html/Zamir_Taskonomy_Disentangling_Task_CVPR_2018_paper.html"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "ScholarlyArticle",
+      "name": "Omnidata: A Scalable Pipeline for Making Multi-Task Mid-Level Vision Datasets from 3D Scans",
+      "author": [
+        {"@type": "Person", "@id": "https://alexsax.github.io/#person"},
+        {"@type": "Person", "name": "Amir R. Zamir"}
+      ],
+      "datePublished": "2021",
+      "isPartOf": {
+        "@type": "Event",
+        "name": "ICCV 2021"
+      },
+      "url": "https://omnidata.vision/"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "ScholarlyArticle",
+      "name": "Robust Learning Through Cross-Task Consistency",
+      "author": [
+        {"@type": "Person", "@id": "https://alexsax.github.io/#person"},
+        {"@type": "Person", "name": "Amir R. Zamir"}
+      ],
+      "datePublished": "2020",
+      "isPartOf": {
+        "@type": "Event",
+        "name": "CVPR 2020"
+      },
+      "award": "Best Paper Nominee"
+    }
+  ]
   </script>
 
   <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
