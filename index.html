@@ -20,12 +20,24 @@
   <meta property="profile:first_name" content="Alexander" />
   <meta property="profile:last_name" content="Sax" />
 
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@iamsashasax" />
+  <meta name="twitter:creator" content="@iamsashasax" />
+  <meta name="twitter:title" content="Alexander (Sasha) Sax" />
+  <meta name="twitter:description" content="Research scientist at Meta Superintelligence Labs, building generalist physical intelligence. CVPR best paper. SAM 3D. Prev @Berkeley @Stanford." />
+  <meta name="twitter:image" content="https://alexsax.github.io/images/headshot2x.png" />
+
   <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "@id": "https://alexsax.github.io/#person",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://alexsax.github.io/"
+    },
     "name": "Alexander Sax",
     "alternateName": ["Sasha Sax", "Alex Sax", "Alexander (Sasha) Sax"],
     "givenName": "Alexander",
@@ -40,14 +52,15 @@
       "name": "Meta",
       "sameAs": "https://ai.meta.com/research/"
     },
-    "knowsAbout": [
-      "Computer Vision",
-      "3D Reconstruction",
-      "Transfer Learning",
-      "Embodied AI",
-      "World Models",
-      "Generative Models"
-    ],
+    "hasCredential": {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "PhD",
+      "recognizedBy": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of California, Berkeley",
+        "sameAs": "https://en.wikipedia.org/wiki/University_of_California,_Berkeley"
+      }
+    },
     "alumniOf": [
       {
         "@type": "CollegeOrUniversity",
@@ -60,7 +73,13 @@
         "sameAs": "https://en.wikipedia.org/wiki/Stanford_University"
       }
     ],
-    "award": "CVPR 2018 Best Paper Award (Taskonomy)",
+    "award": [
+      "CVPR 2018 Best Paper Award (Taskonomy)",
+      "CVPR 2020 Best Paper Honorable Mention",
+      "NVIDIA Pioneering Research Award",
+      "2021 NVIDIA Graduate Fellowship Finalist",
+      "1st Place, Habitat Challenge 2019 (CVPR Embodied AI Workshop)"
+    ],
     "sameAs": [
       "https://scholar.google.com/citations?user=PIq7jcUAAAAJ",
       "https://www.linkedin.com/in/sashasax/",
